@@ -1,0 +1,16 @@
+# Controlled post-hoc workload-weight sensitivity on the frozen stress cohort.
+source_study: results/proofwriter_structural_stress/results.json
+source_selection: results/proofwriter_structural_stress/selection_manifest.json
+dataset_root: data/proofwriter
+weighting:
+  alphas: [0.0, 0.75, 1.5, 3.0]
+  hash_seeds: [11, 23, 47]
+  transform: exp_of_centered_hash_rank_normalized_to_mean_one
+oracle:
+  max_relevant_evidence: 18
+  max_minimal_supports_per_literal: 10000
+bootstrap:
+  seed: 20260927
+  repetitions: 10000
+workers: 16
+output: results/proofwriter_workload_skew_sensitivity/results.json

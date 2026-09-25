@@ -1,0 +1,501 @@
+{
+  "assumptions_verified": {
+    "all_pairwise_intersections_equal_core": true,
+    "development_task_count": 48,
+    "family_count": 14,
+    "noncore_family_supports_disjoint": true,
+    "shared_core_ids": [
+      "tau2-banking-reviewed-tool:kb-search"
+    ]
+  },
+  "budget_frontiers": {
+    "0.1": {
+      "budget": 36.0,
+      "budget_aware_ratio_value": 40.0,
+      "exact_packet_ids": [
+        "business_credit_cards_business_silver_rewards_card",
+        "credit_cards_silver_rewards_card"
+      ],
+      "exact_value": 46.0,
+      "lpba_atomic_prefix_value": 0.0,
+      "ratio_prefix_value": 25.0
+    },
+    "0.25": {
+      "budget": 90.0,
+      "budget_aware_ratio_value": 117.0,
+      "exact_packet_ids": [
+        "credit_cards_credit_card_account_logistics",
+        "credit_cards_credit_card_replacements",
+        "credit_cards_credit_cards_(general)"
+      ],
+      "exact_value": 125.0,
+      "lpba_atomic_prefix_value": 61.0,
+      "ratio_prefix_value": 61.0
+    },
+    "0.5": {
+      "budget": 180.0,
+      "budget_aware_ratio_value": 227.0,
+      "exact_packet_ids": [
+        "business_credit_cards_business_platinum_rewards_card",
+        "business_credit_cards_business_silver_rewards_card",
+        "credit_cards_credit_card_account_logistics",
+        "credit_cards_credit_card_replacements",
+        "credit_cards_credit_cards_(general)",
+        "credit_cards_ecocard",
+        "credit_cards_platinum_rewards_card",
+        "credit_cards_silver_rewards_card"
+      ],
+      "exact_value": 227.0,
+      "lpba_atomic_prefix_value": 227.0,
+      "ratio_prefix_value": 227.0
+    },
+    "0.75": {
+      "budget": 270.0,
+      "budget_aware_ratio_value": 259.0,
+      "exact_packet_ids": [
+        "business_credit_cards_business_bronze_rewards_card",
+        "business_credit_cards_business_platinum_rewards_card",
+        "business_credit_cards_business_silver_rewards_card",
+        "credit_cards_bronze_rewards_card",
+        "credit_cards_credit_card_account_logistics",
+        "credit_cards_credit_card_replacements",
+        "credit_cards_credit_cards_(general)",
+        "credit_cards_crypto-cash_back",
+        "credit_cards_diamond_elite_card",
+        "credit_cards_ecocard",
+        "credit_cards_gold_rewards_card",
+        "credit_cards_platinum_rewards_card",
+        "credit_cards_silver_rewards_card"
+      ],
+      "exact_value": 259.0,
+      "lpba_atomic_prefix_value": 259.0,
+      "ratio_prefix_value": 259.0
+    },
+    "0.9": {
+      "budget": 324.0,
+      "budget_aware_ratio_value": 259.0,
+      "exact_packet_ids": [
+        "business_credit_cards_business_bronze_rewards_card",
+        "business_credit_cards_business_platinum_rewards_card",
+        "business_credit_cards_business_silver_rewards_card",
+        "credit_cards_bronze_rewards_card",
+        "credit_cards_credit_card_account_logistics",
+        "credit_cards_credit_card_replacements",
+        "credit_cards_credit_cards_(general)",
+        "credit_cards_crypto-cash_back",
+        "credit_cards_diamond_elite_card",
+        "credit_cards_ecocard",
+        "credit_cards_gold_rewards_card",
+        "credit_cards_platinum_rewards_card",
+        "credit_cards_silver_rewards_card"
+      ],
+      "exact_value": 259.0,
+      "lpba_atomic_prefix_value": 259.0,
+      "ratio_prefix_value": 259.0
+    }
+  },
+  "common_core_cost": 2.0,
+  "definition": {
+    "auc": "step-function certified workload over total full-portfolio review budget; selected planner bundles are atomic",
+    "cost": "document, tool-contract, proof-evidence, and proof-review declared units",
+    "workload_weights": "frozen development family frequencies"
+  },
+  "exact_subset_dp_auc": 179.59444444444443,
+  "lpba_global_atomic_auc": 177.92777777777778,
+  "lpba_global_steps": [
+    {
+      "cost": 42.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_account_logistics_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_account_logistics_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_account_logistics_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_account_logistics_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_account_logistics_005",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_account_logistics_006",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_account_logistics_007",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_account_logistics_008",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_account_logistics_009",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_005",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_006",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_007",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_008",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_009",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_010",
+        "tau2-banking-reviewed-document:doc_credit_cards_silver_rewards_card_011",
+        "tau2-banking-reviewed-proof:credit_cards_credit_card_account_logistics-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_credit_card_account_logistics-kb-search-second",
+        "tau2-banking-reviewed-proof:credit_cards_silver_rewards_card-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_silver_rewards_card-kb-search-second",
+        "tau2-banking-reviewed-tool:kb-search"
+      ],
+      "regions": [
+        "credit_cards_credit_card_account_logistics",
+        "credit_cards_silver_rewards_card"
+      ],
+      "score": 1.4523809523809523
+    },
+    {
+      "cost": 52.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_005",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_006",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_007",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_008",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_009",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_010",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_011",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_012",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_013",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_014",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_015",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_016",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_017",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_018",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_019",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_020",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_021",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_022",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_023",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_024",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_cards_(general)_025",
+        "tau2-banking-reviewed-proof:credit_cards_credit_cards_(general)-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_credit_cards_(general)-kb-search-second"
+      ],
+      "regions": [
+        "credit_cards_credit_cards_(general)"
+      ],
+      "score": 1.4230769230769231
+    },
+    {
+      "cost": 12.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_replacements_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_replacements_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_replacements_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_replacements_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_credit_card_replacements_005",
+        "tau2-banking-reviewed-proof:credit_cards_credit_card_replacements-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_credit_card_replacements-kb-search-second"
+      ],
+      "regions": [
+        "credit_cards_credit_card_replacements"
+      ],
+      "score": 1.25
+    },
+    {
+      "cost": 17.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_001",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_002",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_003",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_004",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_005",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_006",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_007",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_008",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_009",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_010",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_011",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_012",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_silver_rewards_card_013",
+        "tau2-banking-reviewed-proof:business_credit_cards_business_silver_rewards_card-kb-search-first",
+        "tau2-banking-reviewed-proof:business_credit_cards_business_silver_rewards_card-kb-search-second"
+      ],
+      "regions": [
+        "business_credit_cards_business_silver_rewards_card"
+      ],
+      "score": 1.2352941176470589
+    },
+    {
+      "cost": 17.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_005",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_006",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_007",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_008",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_009",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_010",
+        "tau2-banking-reviewed-document:doc_credit_cards_ecocard_011",
+        "tau2-banking-reviewed-proof:credit_cards_ecocard-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_ecocard-kb-search-second"
+      ],
+      "regions": [
+        "credit_cards_ecocard"
+      ],
+      "score": 1.1764705882352942
+    },
+    {
+      "cost": 17.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_001",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_002",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_003",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_004",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_005",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_006",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_007",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_008",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_009",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_010",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_011",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_platinum_rewards_card_012",
+        "tau2-banking-reviewed-proof:business_credit_cards_business_platinum_rewards_card-kb-search-first",
+        "tau2-banking-reviewed-proof:business_credit_cards_business_platinum_rewards_card-kb-search-second"
+      ],
+      "regions": [
+        "business_credit_cards_business_platinum_rewards_card"
+      ],
+      "score": 1.1176470588235294
+    },
+    {
+      "cost": 17.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_005",
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_006",
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_007",
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_008",
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_009",
+        "tau2-banking-reviewed-document:doc_credit_cards_platinum_rewards_card_010",
+        "tau2-banking-reviewed-proof:credit_cards_platinum_rewards_card-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_platinum_rewards_card-kb-search-second"
+      ],
+      "regions": [
+        "credit_cards_platinum_rewards_card"
+      ],
+      "score": 1.0
+    },
+    {
+      "cost": 11.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_credit_cards_gold_rewards_card_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_gold_rewards_card_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_gold_rewards_card_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_gold_rewards_card_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_gold_rewards_card_005",
+        "tau2-banking-reviewed-proof:credit_cards_gold_rewards_card-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_gold_rewards_card-kb-search-second"
+      ],
+      "regions": [
+        "credit_cards_gold_rewards_card"
+      ],
+      "score": 0.6363636363636364
+    },
+    {
+      "cost": 16.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_001",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_002",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_003",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_004",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_005",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_006",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_007",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_008",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_009",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_010",
+        "tau2-banking-reviewed-document:doc_business_credit_cards_business_bronze_rewards_card_011",
+        "tau2-banking-reviewed-proof:business_credit_cards_business_bronze_rewards_card-kb-search-first",
+        "tau2-banking-reviewed-proof:business_credit_cards_business_bronze_rewards_card-kb-search-second"
+      ],
+      "regions": [
+        "business_credit_cards_business_bronze_rewards_card"
+      ],
+      "score": 0.5625
+    },
+    {
+      "cost": 14.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_credit_cards_bronze_rewards_card_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_bronze_rewards_card_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_bronze_rewards_card_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_bronze_rewards_card_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_bronze_rewards_card_005",
+        "tau2-banking-reviewed-document:doc_credit_cards_bronze_rewards_card_006",
+        "tau2-banking-reviewed-document:doc_credit_cards_bronze_rewards_card_007",
+        "tau2-banking-reviewed-document:doc_credit_cards_bronze_rewards_card_008",
+        "tau2-banking-reviewed-proof:credit_cards_bronze_rewards_card-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_bronze_rewards_card-kb-search-second"
+      ],
+      "regions": [
+        "credit_cards_bronze_rewards_card"
+      ],
+      "score": 0.42857142857142855
+    },
+    {
+      "cost": 15.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_credit_cards_crypto-cash_back_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_crypto-cash_back_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_crypto-cash_back_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_crypto-cash_back_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_crypto-cash_back_005",
+        "tau2-banking-reviewed-document:doc_credit_cards_crypto-cash_back_006",
+        "tau2-banking-reviewed-document:doc_credit_cards_crypto-cash_back_007",
+        "tau2-banking-reviewed-document:doc_credit_cards_crypto-cash_back_008",
+        "tau2-banking-reviewed-document:doc_credit_cards_crypto-cash_back_009",
+        "tau2-banking-reviewed-proof:credit_cards_crypto-cash_back-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_crypto-cash_back-kb-search-second"
+      ],
+      "regions": [
+        "credit_cards_crypto-cash_back"
+      ],
+      "score": 0.4
+    },
+    {
+      "cost": 15.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_credit_cards_diamond_elite_card_001",
+        "tau2-banking-reviewed-document:doc_credit_cards_diamond_elite_card_002",
+        "tau2-banking-reviewed-document:doc_credit_cards_diamond_elite_card_003",
+        "tau2-banking-reviewed-document:doc_credit_cards_diamond_elite_card_004",
+        "tau2-banking-reviewed-document:doc_credit_cards_diamond_elite_card_005",
+        "tau2-banking-reviewed-document:doc_credit_cards_diamond_elite_card_006",
+        "tau2-banking-reviewed-document:doc_credit_cards_diamond_elite_card_007",
+        "tau2-banking-reviewed-document:doc_credit_cards_diamond_elite_card_008",
+        "tau2-banking-reviewed-document:doc_credit_cards_diamond_elite_card_009",
+        "tau2-banking-reviewed-proof:credit_cards_diamond_elite_card-kb-search-first",
+        "tau2-banking-reviewed-proof:credit_cards_diamond_elite_card-kb-search-second"
+      ],
+      "regions": [
+        "credit_cards_diamond_elite_card"
+      ],
+      "score": 0.26666666666666666
+    },
+    {
+      "cost": 115.0,
+      "evidence_ids": [
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_001",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_002",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_003",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_004",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_005",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_006",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_007",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_008",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_009",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_010",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_011",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_012",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_013",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_014",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_015",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_016",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_017",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_018",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_019",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_020",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_021",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_022",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_023",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_024",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_025",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_026",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_027",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_028",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_029",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_030",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_031",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_032",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_033",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_034",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_035",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_036",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_037",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_039",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_040",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_041",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_042",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_043",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_044",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_045",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_046",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_047",
+        "tau2-banking-reviewed-document:doc_bank_accounts_bank_accounts_(general)_048",
+        "tau2-banking-reviewed-proof:bank_accounts_bank_accounts_(general)-kb-search-first",
+        "tau2-banking-reviewed-proof:bank_accounts_bank_accounts_(general)-kb-search-second"
+      ],
+      "regions": [
+        "bank_accounts_bank_accounts_(general)"
+      ],
+      "score": 0.06956521739130435
+    }
+  ],
+  "lpba_relative_regret": 0.009280168280384766,
+  "packet_cost": {
+    "bank_accounts_bank_accounts_(general)": 115.0,
+    "business_credit_cards_business_bronze_rewards_card": 16.0,
+    "business_credit_cards_business_platinum_rewards_card": 17.0,
+    "business_credit_cards_business_silver_rewards_card": 17.0,
+    "credit_cards_bronze_rewards_card": 14.0,
+    "credit_cards_credit_card_account_logistics": 24.0,
+    "credit_cards_credit_card_replacements": 12.0,
+    "credit_cards_credit_cards_(general)": 52.0,
+    "credit_cards_crypto-cash_back": 15.0,
+    "credit_cards_diamond_elite_card": 15.0,
+    "credit_cards_ecocard": 17.0,
+    "credit_cards_gold_rewards_card": 11.0,
+    "credit_cards_platinum_rewards_card": 17.0,
+    "credit_cards_silver_rewards_card": 16.0
+  },
+  "packet_value": {
+    "bank_accounts_bank_accounts_(general)": 8.0,
+    "business_credit_cards_business_bronze_rewards_card": 9.0,
+    "business_credit_cards_business_platinum_rewards_card": 19.0,
+    "business_credit_cards_business_silver_rewards_card": 21.0,
+    "credit_cards_bronze_rewards_card": 6.0,
+    "credit_cards_credit_card_account_logistics": 36.0,
+    "credit_cards_credit_card_replacements": 15.0,
+    "credit_cards_credit_cards_(general)": 74.0,
+    "credit_cards_crypto-cash_back": 6.0,
+    "credit_cards_diamond_elite_card": 4.0,
+    "credit_cards_ecocard": 20.0,
+    "credit_cards_gold_rewards_card": 7.0,
+    "credit_cards_platinum_rewards_card": 17.0,
+    "credit_cards_silver_rewards_card": 25.0
+  },
+  "ratio_order": [
+    "credit_cards_silver_rewards_card",
+    "credit_cards_credit_card_account_logistics",
+    "credit_cards_credit_cards_(general)",
+    "credit_cards_credit_card_replacements",
+    "business_credit_cards_business_silver_rewards_card",
+    "credit_cards_ecocard",
+    "business_credit_cards_business_platinum_rewards_card",
+    "credit_cards_platinum_rewards_card",
+    "credit_cards_gold_rewards_card",
+    "business_credit_cards_business_bronze_rewards_card",
+    "credit_cards_bronze_rewards_card",
+    "credit_cards_crypto-cash_back",
+    "credit_cards_diamond_elite_card",
+    "bank_accounts_bank_accounts_(general)"
+  ],
+  "ratio_order_auc": 179.59444444444443,
+  "schema_version": "banking-separable-exact-development-audit-v1",
+  "source": {
+    "adapter_sha256": "89d04a40e13c450a7e4ebbaab4e6bfd56483c665b7bac116ae663aa3405c77fe",
+    "audit_sha256": "f70998fc02d930bf6e98a48a4f496b8a27c5aee3a8cb65cbafe2731f789f9c22",
+    "catalog_digest": "d0eda6ae2e230dfc3b2ebf80a7daf704bd0e45ea20847ed3274d155830e1ca36",
+    "frozen_controls_sha256": "da848e9b8b9f61872aa95ac7d5beeacc8081cd7177eb99e965fb6e3f1ac20e08",
+    "planner_sha256": "00adb8ecd3fff150ed15398e61b6dfdafb307b54420bd971f0dd0390284002e8",
+    "tau2_revision": "2174a603f6d014ef94473ffa95957f6ce27100db"
+  },
+  "status": "post-hoc structural audit of one frozen development catalog; not held-out Qwen efficacy or semantic validation",
+  "sum_workload_weight": 267.0,
+  "total_cost": 360.0
+}

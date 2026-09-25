@@ -1,0 +1,22 @@
+# Outcome-blind structural stress cohort, frozen before reading indices 200:947.
+dataset:
+  root: data/proofwriter
+  split: test
+  depth: depth-5
+  start_index: 200
+  selection_pool_end: 947
+  target_theories: 100
+  archive_sha256: bbc5694901e8306d0bd659aa1ad53ccfd02c201864f4b320ffa3777827d1fc26
+selection:
+  max_relevant_evidence: 18
+  max_minimal_supports_per_literal: 10000
+  require_positive_complementarity: true
+  require_positive_shared_evidence: true
+  rank: [descending_relevant_evidence, descending_minimal_support_count, ascending_theory_id]
+oracle:
+  budget_fractions: [0.1, 0.25, 0.5, 0.75, 0.9]
+workloads: [uniform, train_predicate_frequency]
+bootstrap:
+  seed: 20260926
+  repetitions: 10000
+output: results/proofwriter_structural_stress/results.json

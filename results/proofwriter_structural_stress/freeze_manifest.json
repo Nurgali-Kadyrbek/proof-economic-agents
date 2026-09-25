@@ -1,0 +1,21 @@
+{
+  "created_before_opening_pool": true,
+  "files": {
+    "config": "configs/proofwriter_structural_stress.yaml",
+    "core": "src/delegation_lab/experiments/proofwriter_exact_core.py",
+    "protocol": "docs/proofwriter_structural_stress_protocol.md",
+    "runner": "src/delegation_lab/experiments/proofwriter_structural_stress.py",
+    "source_test": "data/proofwriter/proofwriter-dataset-V2020.12.3/OWA/depth-5/meta-test.jsonl",
+    "summary_runner": "src/delegation_lab/experiments/proofwriter_exact_characterization.py",
+    "train_prior_artifact": "results/proofwriter_train_prior/results.json"
+  },
+  "hashes": {
+    "config": "54bfee93a2270c5d43eec57170bd69116f785ed346fd4380634834e86ad8c014",
+    "core": "a823c5784b53d2ea10de21971727e88e305a8edf98333ef12ffcd3730e69a3d3",
+    "protocol": "da6beb4a80758f078e96147dfa66e75feedc36c6c7e7d4a648096d003afe34ad",
+    "runner": "af65c0149ac0b30f1e8bbc57b18eae35e27c1338bfc7b5a336409acfa1dedef2",
+    "source_test": "c09fad796aaf546d6fcbfc77ecf91f935ffed3c936c2b0e96f4aa57211fad842",
+    "summary_runner": "111ef2353e95f4b8d349cce4852c70bc7d93bab44ae1ce48dddab55b71fb78d1",
+    "train_prior_artifact": "c182f8a42e4081364a843a9edce925847fbfc2a0328f71d34aeddaedcf13f4fc"
+  }
+}

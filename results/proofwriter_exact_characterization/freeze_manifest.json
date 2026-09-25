@@ -1,0 +1,22 @@
+{
+  "cohort": "test depth-5 source-order indices 100:200",
+  "confirmation_evaluated": false,
+  "created_utc": "2026-09-24T22:42:54.768531+00:00",
+  "hashes": {
+    "config": "3d4d00a0b200a1ef8c66b4196d8645651c9bc1a80bf15225e385de18d07fe66c",
+    "core": "a823c5784b53d2ea10de21971727e88e305a8edf98333ef12ffcd3730e69a3d3",
+    "protocol": "43ee19750a9748e7e0e5aab41d162399fc3a1b2ec44328a33cd6e3b6d6b666aa",
+    "runner": "111ef2353e95f4b8d349cce4852c70bc7d93bab44ae1ce48dddab55b71fb78d1",
+    "source_test": "c09fad796aaf546d6fcbfc77ecf91f935ffed3c936c2b0e96f4aa57211fad842",
+    "train_prior_artifact": "c182f8a42e4081364a843a9edce925847fbfc2a0328f71d34aeddaedcf13f4fc"
+  },
+  "paths": {
+    "config": "configs/proofwriter_exact_characterization.yaml",
+    "core": "src/delegation_lab/experiments/proofwriter_exact_core.py",
+    "protocol": "docs/proofwriter_exact_characterization_protocol.md",
+    "runner": "src/delegation_lab/experiments/proofwriter_exact_characterization.py",
+    "source_test": "data/proofwriter/proofwriter-dataset-V2020.12.3/OWA/depth-5/meta-test.jsonl",
+    "train_prior_artifact": "results/proofwriter_train_prior/results.json"
+  },
+  "schema_version": "proofwriter-exact-characterization-freeze-v1"
+}

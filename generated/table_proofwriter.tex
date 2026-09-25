@@ -1,0 +1,17 @@
+\begin{table}[H]
+\caption{Budget-feasible whole-order area on two nonoverlapping ProofWriter cohorts from one release. Each column is a mean across theories; regret is the mean of per-theory normalized gaps.\label{tab:proofwriter}}
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+Method / measure & Source order ($n=100$) & Structural stress ($n=100$) \\
+\midrule
+Exact oracle & 4.633 & 8.119 \\
+LPBA & 4.570 & 7.919 \\
+Lazy First-Use & 4.344 & 7.474 \\
+One-step gain & 3.834 & 6.549 \\
+Support-score heuristic & 4.468 & 7.468 \\
+LPBA mean per-theory regret & 0.81\% & 2.51\% \\
+LPBA regret, 95\% bootstrap CI & [0.47\%, 1.21\%] & [2.06\%, 2.99\%] \\
+\bottomrule
+\end{tabular}
+\end{table}

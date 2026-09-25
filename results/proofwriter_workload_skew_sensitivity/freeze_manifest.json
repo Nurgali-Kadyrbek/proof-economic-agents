@@ -1,0 +1,23 @@
+{
+  "created_before_evaluating_new_weight_conditions": true,
+  "files": {
+    "config": "configs/proofwriter_workload_skew_sensitivity.yaml",
+    "core": "src/delegation_lab/experiments/proofwriter_exact_core.py",
+    "protocol": "docs/proofwriter_workload_skew_sensitivity_protocol.md",
+    "runner": "src/delegation_lab/experiments/proofwriter_workload_skew_sensitivity.py",
+    "source_selection": "results/proofwriter_structural_stress/selection_manifest.json",
+    "source_study": "results/proofwriter_structural_stress/results.json",
+    "source_test": "data/proofwriter/proofwriter-dataset-V2020.12.3/OWA/depth-5/meta-test.jsonl",
+    "summary_runner": "src/delegation_lab/experiments/proofwriter_exact_characterization.py"
+  },
+  "hashes": {
+    "config": "0809809cb7b9739c722efea5ea351fcbb4efe972506652efb9376d03e681679a",
+    "core": "a823c5784b53d2ea10de21971727e88e305a8edf98333ef12ffcd3730e69a3d3",
+    "protocol": "9245dfe14b7a587b42b63c88945a1af2780063931c8df0c3ffdcdaa1982a1578",
+    "runner": "87c204f4aa8213ae83dd047168c1f3df8c71199d31577a793f9db609a4b6ebf3",
+    "source_selection": "421f6e21401702034a2b02d33d7c4dd1bd95b91a46ba5f8c4a079176108b29da",
+    "source_study": "0777742ef53472ce9485bdbaf23c7ff72eebe9f838ef39e8acde35dce23414f9",
+    "source_test": "c09fad796aaf546d6fcbfc77ecf91f935ffed3c936c2b0e96f4aa57211fad842",
+    "summary_runner": "111ef2353e95f4b8d349cce4852c70bc7d93bab44ae1ce48dddab55b71fb78d1"
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "description": "Only prior-cohort identifiers needed by the exact-study overlap guard; frozen from the prior raw analysis artifact.",
+  "runs": {
+    "lpba": [
+      {
+        "theory_id": "RelNeg-OWA-D5-332"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-865"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-357"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-872"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-685"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-1003"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-232"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-428"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-645"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-524"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-446"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-713"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-1126"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-929"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-715"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-390"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-587"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-537"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-125"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-1268"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-98"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-571"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-157"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-822"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-547"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-1184"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-694"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-174"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-161"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-373"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-326"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-304"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-709"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-274"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-228"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-335"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-839"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-28"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-206"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-883"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-226"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-210"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-837"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-497"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-198"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-104"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-374"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-984"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-881"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-15"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-400"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-887"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-999"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-334"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-1107"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-1061"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-507"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-368"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-192"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-1295"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-751"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-556"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-878"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-877"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-289"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-339"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-578"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-206"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-358"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-871"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-899"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-308"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-1195"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-809"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-344"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-27"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-402"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-333"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-250"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-184"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-496"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-669"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-246"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-231"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-73"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-479"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-470"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-810"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-566"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-54"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-270"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-788"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-948"
+      },
+      {
+        "theory_id": "RelNoneg-OWA-D5-542"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-283"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-850"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-536"
+      },
+      {
+        "theory_id": "AttNoneg-OWA-D5-240"
+      },
+      {
+        "theory_id": "RelNeg-OWA-D5-707"
+      },
+      {
+        "theory_id": "AttNeg-OWA-D5-202"
+      }
+    ]
+  },
+  "schema_version": "proofwriter-overlap-guard-public-v1",
+  "source_sha256": "563536a519b8a854e7d04bc66b45c13d12d3c8185dc062c4f5de94c7d2ad007e"
+}

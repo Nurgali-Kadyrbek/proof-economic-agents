@@ -1,0 +1,1305 @@
+{
+  "lifecycle": {
+    "claim_boundary": "Controlled lifecycle mechanism replay on the already-consumed telecom test stream; not fresh held-out efficacy evidence or an official tau2 score.",
+    "model": {
+      "id": "Qwen/Qwen3.5-2B",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+    },
+    "phase_summary": {
+      "qwen_certified_skills_lpba": {
+        "entire_lifecycle": {
+          "complete_workload": {
+            "action_contract_successes": 26,
+            "authority_downtime_episode_starts": 1,
+            "authority_downtime_relevant_obligations": 1,
+            "benchmark_success_rate": 0.325,
+            "benchmark_successes": 26,
+            "cache_hits": 0,
+            "denominator_episodes": 80,
+            "invalid_tool_actions": 73,
+            "population": "complete_workload",
+            "qwen_calls": 1015,
+            "qwen_calls_per_episode": 12.6875,
+            "qwen_tokens": 11235097,
+            "qwen_tokens_per_episode": 140438.7125,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 97,
+            "valid_useful_deterministic_workload": 97
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 20,
+            "authority_downtime_episode_starts": 1,
+            "authority_downtime_relevant_obligations": 1,
+            "benchmark_success_rate": 0.3333333333333333,
+            "benchmark_successes": 20,
+            "cache_hits": 0,
+            "denominator_episodes": 60,
+            "invalid_tool_actions": 55,
+            "population": "eligible_recurrent",
+            "qwen_calls": 723,
+            "qwen_calls_per_episode": 12.05,
+            "qwen_tokens": 7963239,
+            "qwen_tokens_per_episode": 132720.65,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 89,
+            "valid_useful_deterministic_workload": 89
+          }
+        },
+        "post_change": {
+          "complete_workload": {
+            "action_contract_successes": 13,
+            "authority_downtime_episode_starts": 1,
+            "authority_downtime_relevant_obligations": 1,
+            "benchmark_success_rate": 0.325,
+            "benchmark_successes": 13,
+            "cache_hits": 0,
+            "denominator_episodes": 40,
+            "invalid_tool_actions": 41,
+            "population": "complete_workload",
+            "qwen_calls": 506,
+            "qwen_calls_per_episode": 12.65,
+            "qwen_tokens": 5604663,
+            "qwen_tokens_per_episode": 140116.575,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 50,
+            "valid_useful_deterministic_workload": 50
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 10,
+            "authority_downtime_episode_starts": 1,
+            "authority_downtime_relevant_obligations": 1,
+            "benchmark_success_rate": 0.3333333333333333,
+            "benchmark_successes": 10,
+            "cache_hits": 0,
+            "denominator_episodes": 30,
+            "invalid_tool_actions": 32,
+            "population": "eligible_recurrent",
+            "qwen_calls": 360,
+            "qwen_calls_per_episode": 12.0,
+            "qwen_tokens": 3968734,
+            "qwen_tokens_per_episode": 132291.13333333333,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 46,
+            "valid_useful_deterministic_workload": 46
+          }
+        },
+        "pre_change": {
+          "complete_workload": {
+            "action_contract_successes": 13,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.325,
+            "benchmark_successes": 13,
+            "cache_hits": 0,
+            "denominator_episodes": 40,
+            "invalid_tool_actions": 32,
+            "population": "complete_workload",
+            "qwen_calls": 509,
+            "qwen_calls_per_episode": 12.725,
+            "qwen_tokens": 5630434,
+            "qwen_tokens_per_episode": 140760.85,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 47,
+            "valid_useful_deterministic_workload": 47
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 10,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3333333333333333,
+            "benchmark_successes": 10,
+            "cache_hits": 0,
+            "denominator_episodes": 30,
+            "invalid_tool_actions": 23,
+            "population": "eligible_recurrent",
+            "qwen_calls": 363,
+            "qwen_calls_per_episode": 12.1,
+            "qwen_tokens": 3994505,
+            "qwen_tokens_per_episode": 133150.16666666666,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 43,
+            "valid_useful_deterministic_workload": 43
+          }
+        }
+      },
+      "qwen_exact_cache": {
+        "entire_lifecycle": {
+          "complete_workload": {
+            "action_contract_successes": 24,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 24,
+            "cache_hits": 704,
+            "denominator_episodes": 80,
+            "invalid_tool_actions": 70,
+            "population": "complete_workload",
+            "qwen_calls": 430,
+            "qwen_calls_per_episode": 5.375,
+            "qwen_tokens": 4755237,
+            "qwen_tokens_per_episode": 59440.4625,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 18,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 18,
+            "cache_hits": 529,
+            "denominator_episodes": 60,
+            "invalid_tool_actions": 54,
+            "population": "eligible_recurrent",
+            "qwen_calls": 305,
+            "qwen_calls_per_episode": 5.083333333333333,
+            "qwen_tokens": 3334252,
+            "qwen_tokens_per_episode": 55570.86666666667,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          }
+        },
+        "post_change": {
+          "complete_workload": {
+            "action_contract_successes": 12,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 12,
+            "cache_hits": 567,
+            "denominator_episodes": 40,
+            "invalid_tool_actions": 35,
+            "population": "complete_workload",
+            "qwen_calls": 0,
+            "qwen_calls_per_episode": 0.0,
+            "qwen_tokens": 0,
+            "qwen_tokens_per_episode": 0.0,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 9,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 9,
+            "cache_hits": 417,
+            "denominator_episodes": 30,
+            "invalid_tool_actions": 27,
+            "population": "eligible_recurrent",
+            "qwen_calls": 0,
+            "qwen_calls_per_episode": 0.0,
+            "qwen_tokens": 0,
+            "qwen_tokens_per_episode": 0.0,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          }
+        },
+        "pre_change": {
+          "complete_workload": {
+            "action_contract_successes": 12,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 12,
+            "cache_hits": 137,
+            "denominator_episodes": 40,
+            "invalid_tool_actions": 35,
+            "population": "complete_workload",
+            "qwen_calls": 430,
+            "qwen_calls_per_episode": 10.75,
+            "qwen_tokens": 4755237,
+            "qwen_tokens_per_episode": 118880.925,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 9,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 9,
+            "cache_hits": 112,
+            "denominator_episodes": 30,
+            "invalid_tool_actions": 27,
+            "population": "eligible_recurrent",
+            "qwen_calls": 305,
+            "qwen_calls_per_episode": 10.166666666666666,
+            "qwen_tokens": 3334252,
+            "qwen_tokens_per_episode": 111141.73333333334,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          }
+        }
+      },
+      "qwen_only": {
+        "entire_lifecycle": {
+          "complete_workload": {
+            "action_contract_successes": 24,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 24,
+            "cache_hits": 0,
+            "denominator_episodes": 80,
+            "invalid_tool_actions": 70,
+            "population": "complete_workload",
+            "qwen_calls": 1134,
+            "qwen_calls_per_episode": 14.175,
+            "qwen_tokens": 12415354,
+            "qwen_tokens_per_episode": 155191.925,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 18,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 18,
+            "cache_hits": 0,
+            "denominator_episodes": 60,
+            "invalid_tool_actions": 54,
+            "population": "eligible_recurrent",
+            "qwen_calls": 834,
+            "qwen_calls_per_episode": 13.9,
+            "qwen_tokens": 9049422,
+            "qwen_tokens_per_episode": 150823.7,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          }
+        },
+        "post_change": {
+          "complete_workload": {
+            "action_contract_successes": 12,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 12,
+            "cache_hits": 0,
+            "denominator_episodes": 40,
+            "invalid_tool_actions": 35,
+            "population": "complete_workload",
+            "qwen_calls": 567,
+            "qwen_calls_per_episode": 14.175,
+            "qwen_tokens": 6207677,
+            "qwen_tokens_per_episode": 155191.925,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 9,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 9,
+            "cache_hits": 0,
+            "denominator_episodes": 30,
+            "invalid_tool_actions": 27,
+            "population": "eligible_recurrent",
+            "qwen_calls": 417,
+            "qwen_calls_per_episode": 13.9,
+            "qwen_tokens": 4524711,
+            "qwen_tokens_per_episode": 150823.7,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          }
+        },
+        "pre_change": {
+          "complete_workload": {
+            "action_contract_successes": 12,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 12,
+            "cache_hits": 0,
+            "denominator_episodes": 40,
+            "invalid_tool_actions": 35,
+            "population": "complete_workload",
+            "qwen_calls": 567,
+            "qwen_calls_per_episode": 14.175,
+            "qwen_tokens": 6207677,
+            "qwen_tokens_per_episode": 155191.925,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 9,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 9,
+            "cache_hits": 0,
+            "denominator_episodes": 30,
+            "invalid_tool_actions": 27,
+            "population": "eligible_recurrent",
+            "qwen_calls": 417,
+            "qwen_calls_per_episode": 13.9,
+            "qwen_tokens": 4524711,
+            "qwen_tokens_per_episode": 150823.7,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 0,
+            "valid_useful_deterministic_workload": 0
+          }
+        }
+      },
+      "qwen_simple_delegation": {
+        "entire_lifecycle": {
+          "complete_workload": {
+            "action_contract_successes": 25,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3125,
+            "benchmark_successes": 25,
+            "cache_hits": 0,
+            "denominator_episodes": 80,
+            "invalid_tool_actions": 70,
+            "population": "complete_workload",
+            "qwen_calls": 1012,
+            "qwen_calls_per_episode": 12.65,
+            "qwen_tokens": 11214356,
+            "qwen_tokens_per_episode": 140179.45,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 97,
+            "valid_useful_deterministic_workload": 97
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 19,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.31666666666666665,
+            "benchmark_successes": 19,
+            "cache_hits": 0,
+            "denominator_episodes": 60,
+            "invalid_tool_actions": 52,
+            "population": "eligible_recurrent",
+            "qwen_calls": 720,
+            "qwen_calls_per_episode": 12.0,
+            "qwen_tokens": 7942498,
+            "qwen_tokens_per_episode": 132374.96666666667,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 89,
+            "valid_useful_deterministic_workload": 89
+          }
+        },
+        "post_change": {
+          "complete_workload": {
+            "action_contract_successes": 13,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.325,
+            "benchmark_successes": 13,
+            "cache_hits": 0,
+            "denominator_episodes": 40,
+            "invalid_tool_actions": 40,
+            "population": "complete_workload",
+            "qwen_calls": 505,
+            "qwen_calls_per_episode": 12.625,
+            "qwen_tokens": 5596956,
+            "qwen_tokens_per_episode": 139923.9,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 50,
+            "valid_useful_deterministic_workload": 50
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 10,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3333333333333333,
+            "benchmark_successes": 10,
+            "cache_hits": 0,
+            "denominator_episodes": 30,
+            "invalid_tool_actions": 31,
+            "population": "eligible_recurrent",
+            "qwen_calls": 359,
+            "qwen_calls_per_episode": 11.966666666666667,
+            "qwen_tokens": 3961027,
+            "qwen_tokens_per_episode": 132034.23333333334,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 46,
+            "valid_useful_deterministic_workload": 46
+          }
+        },
+        "pre_change": {
+          "complete_workload": {
+            "action_contract_successes": 12,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 12,
+            "cache_hits": 0,
+            "denominator_episodes": 40,
+            "invalid_tool_actions": 30,
+            "population": "complete_workload",
+            "qwen_calls": 507,
+            "qwen_calls_per_episode": 12.675,
+            "qwen_tokens": 5617400,
+            "qwen_tokens_per_episode": 140435.0,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 47,
+            "valid_useful_deterministic_workload": 47
+          },
+          "eligible_recurrent": {
+            "action_contract_successes": 9,
+            "authority_downtime_episode_starts": 0,
+            "authority_downtime_relevant_obligations": 0,
+            "benchmark_success_rate": 0.3,
+            "benchmark_successes": 9,
+            "cache_hits": 0,
+            "denominator_episodes": 30,
+            "invalid_tool_actions": 21,
+            "population": "eligible_recurrent",
+            "qwen_calls": 361,
+            "qwen_calls_per_episode": 12.033333333333333,
+            "qwen_tokens": 3981471,
+            "qwen_tokens_per_episode": 132715.7,
+            "stale_or_invalid_deterministic_executions": 0,
+            "valid_deterministic_executions": 43,
+            "valid_useful_deterministic_workload": 43
+          }
+        }
+      }
+    },
+    "source_event": {
+      "changed_evidence_items": [
+        "tau2-telecom-reviewed-contract:airplane-policy",
+        "tau2-telecom-reviewed-contract:airplane-proof-rule"
+      ],
+      "description": "Controlled reviewed-policy item version event. Payloads are unchanged; old proofs are suspended because their source versions no longer match.",
+      "event_id": "reviewed-airplane-policy-v2",
+      "exact_cache": {
+        "forced_cache_invalidations": 0,
+        "reason": "The existing key contains messages and operational state version, not reviewed-source version epochs. Cache entries are therefore neither cleared nor protected beyond the information in their actual key.",
+        "source_epoch_present_in_existing_cache_key": false
+      },
+      "payload_changed": false,
+      "when": "after pre_change episode 40 and before post_change episode 1"
+    },
+    "source_event_outcomes": {
+      "qwen_certified_skills_lpba": {
+        "active_programs_after_event": [
+          "repair_mobile_data",
+          "repair_data_saver"
+        ],
+        "affected_programs": [
+          "repair_airplane"
+        ],
+        "changed_items": [
+          "tau2-telecom-reviewed-contract:airplane-policy",
+          "tau2-telecom-reviewed-contract:airplane-proof-rule"
+        ],
+        "event_id": "reviewed-airplane-policy-v2",
+        "evidence_review_cost": 22.0,
+        "kind": "source_version_change",
+        "phase": "boundary",
+        "proof_review_cost": 6.0,
+        "stale_active": 0,
+        "suspended": [
+          "25a0236946707ceaef62"
+        ]
+      },
+      "qwen_exact_cache": {
+        "affected_programs": [],
+        "changed_items": [
+          "tau2-telecom-reviewed-contract:airplane-policy",
+          "tau2-telecom-reviewed-contract:airplane-proof-rule"
+        ],
+        "event_id": "reviewed-airplane-policy-v2",
+        "stale_active": 0,
+        "suspended": []
+      },
+      "qwen_only": {
+        "affected_programs": [],
+        "changed_items": [
+          "tau2-telecom-reviewed-contract:airplane-policy",
+          "tau2-telecom-reviewed-contract:airplane-proof-rule"
+        ],
+        "event_id": "reviewed-airplane-policy-v2",
+        "stale_active": 0,
+        "suspended": []
+      },
+      "qwen_simple_delegation": {
+        "active_programs_after_event": [
+          "repair_airplane",
+          "repair_mobile_data",
+          "repair_data_saver"
+        ],
+        "affected_programs": [
+          "repair_airplane"
+        ],
+        "changed_items": [
+          "tau2-telecom-reviewed-contract:airplane-policy",
+          "tau2-telecom-reviewed-contract:airplane-proof-rule"
+        ],
+        "event_id": "reviewed-airplane-policy-v2",
+        "evidence_review_cost": 26.0,
+        "kind": "source_version_change",
+        "phase": "boundary",
+        "proof_review_cost": 8.0,
+        "stale_active": 0,
+        "suspended": [
+          "25a0236946707ceaef62"
+        ]
+      }
+    },
+    "tau2": {
+      "git_sha": "2174a603f6d014ef94473ffa95957f6ce27100db"
+    }
+  },
+  "schema": "public-agent-summary-v1",
+  "source_sha256": {
+    "telecom_lifecycle": "4a83d21ce05d4cfa482e83e702b00937f156fa969f36488b711c4f2737eb4a13",
+    "telecom_stream": "a5d976980f0e631993ec8b1f183fc96240336c4c17e30ffa3f972e1f4a1b7d2e"
+  },
+  "stream": {
+    "certificate_reuse": {
+      "invocations_in_episodes_with_a_prior_certificate": 32,
+      "lpba_calls_in_reuse_episodes": 392,
+      "per_skill": {
+        "repair_airplane": {
+          "reuses_after_prior_certification": 23,
+          "uses": 24
+        },
+        "repair_data_saver": {
+          "reuses_after_prior_certification": 7,
+          "uses": 8
+        },
+        "repair_mobile_data": {
+          "reuses_after_prior_certification": 14,
+          "uses": 15
+        }
+      },
+      "qwen_calls_in_paired_reuse_episodes": 449,
+      "reused_skill_invocations": 44,
+      "skill_invocations": 47
+    },
+    "certified_useful_workload": {
+      "qwen_certified_skills_lpba": 80.0,
+      "qwen_exact_cache": 0,
+      "qwen_only": 0,
+      "qwen_simple_delegation": 80.0
+    },
+    "claim_boundary": "Pinned existing tau2 telecom solo tickets/tools and source-state eligibility. One persistent semantic portfolio per arm; fresh task state each episode. Not an official leaderboard score.",
+    "model": {
+      "id": "Qwen/Qwen3.5-2B",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+    },
+    "paired_full": {
+      "baseline_arm": "qwen_only",
+      "bootstrap_replicates": 2000,
+      "comparisons": {
+        "qwen_certified_skills_lpba_minus_qwen_only": {
+          "action_contract_success": {
+            "by_family": {
+              "ci95_high": 0.1111111111111111,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.037037037037037035,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.075,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.025,
+              "replicates": 2000
+            },
+            "description": "action-contract success"
+          },
+          "agent_model_calls": {
+            "by_family": {
+              "ci95_high": -1.125,
+              "ci95_low": -2.4444444444444446,
+              "clusters": 3,
+              "mean_difference": -1.5898148148148152,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -1.1,
+              "ci95_low": -1.800625,
+              "clusters": 40,
+              "mean_difference": -1.45,
+              "replicates": 2000
+            },
+            "description": "model calls per task"
+          },
+          "agent_tokens": {
+            "by_family": {
+              "ci95_high": -10522.125,
+              "ci95_low": -24799.666666666686,
+              "clusters": 3,
+              "mean_difference": -15900.41944444445,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -10997.478125000003,
+              "ci95_low": -18233.679375,
+              "clusters": 40,
+              "mean_difference": -14431.075,
+              "replicates": 2000
+            },
+            "description": "agent input + output tokens per task"
+          },
+          "benchmark_success": {
+            "by_family": {
+              "ci95_high": 0.1111111111111111,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.037037037037037035,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.075,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.025,
+              "replicates": 2000
+            },
+            "description": "benchmark reward success"
+          },
+          "delegated_useful_workload": {
+            "by_family": {
+              "ci95_high": 2.0,
+              "ci95_low": 0.7333333333333333,
+              "clusters": 3,
+              "mean_difference": 1.2861111111111112,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 1.425,
+              "ci95_low": 0.925,
+              "clusters": 40,
+              "mean_difference": 1.175,
+              "replicates": 2000
+            },
+            "description": "useful workload completed by a checked program per episode"
+          },
+          "deterministic_actions": {
+            "by_family": {
+              "ci95_high": 4.0,
+              "ci95_low": 1.4666666666666666,
+              "clusters": 3,
+              "mean_difference": 2.5722222222222224,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 2.85,
+              "ci95_low": 1.85,
+              "clusters": 40,
+              "mean_difference": 2.35,
+              "replicates": 2000
+            },
+            "description": "deterministic delegated actions per task"
+          },
+          "invalid_tool_actions": {
+            "by_family": {
+              "ci95_high": 0.25,
+              "ci95_low": -0.777777777777778,
+              "clusters": 3,
+              "mean_difference": -0.17592592592592596,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.2,
+              "ci95_low": -0.425,
+              "clusters": 40,
+              "mean_difference": -0.075,
+              "replicates": 2000
+            },
+            "description": "invalid tool actions per task"
+          },
+          "latency_seconds": {
+            "by_family": {
+              "ci95_high": -5.189870119535286,
+              "ci95_low": -19.47897324700736,
+              "clusters": 3,
+              "mean_difference": -10.182521484139363,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -5.952060874624876,
+              "ci95_low": -11.743695049971484,
+              "clusters": 40,
+              "mean_difference": -8.680458709752566,
+              "replicates": 2000
+            },
+            "description": "wall-clock latency seconds per task"
+          },
+          "protocol_violations": {
+            "by_family": {
+              "ci95_high": -3.4375,
+              "ci95_low": -13.444444444444443,
+              "clusters": 3,
+              "mean_difference": -7.182870370370369,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -3.774375000000003,
+              "ci95_low": -8.65,
+              "clusters": 40,
+              "mean_difference": -6.15,
+              "replicates": 2000
+            },
+            "description": "solo communication protocol violations per task"
+          }
+        },
+        "qwen_certified_skills_lpba_minus_qwen_simple_delegation": {
+          "action_contract_success": {
+            "by_family": {
+              "ci95_high": 0.1111111111111111,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.037037037037037035,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.075,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.025,
+              "replicates": 2000
+            },
+            "description": "action-contract success"
+          },
+          "agent_model_calls": {
+            "by_family": {
+              "ci95_high": 0.22222222222222143,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0740740740740738,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.15,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.05,
+              "replicates": 2000
+            },
+            "description": "model calls per task"
+          },
+          "agent_tokens": {
+            "by_family": {
+              "ci95_high": 1448.222222222219,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 482.7407407407397,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 1551.7,
+              "ci95_low": -406.475,
+              "clusters": 40,
+              "mean_difference": 325.85,
+              "replicates": 2000
+            },
+            "description": "agent input + output tokens per task"
+          },
+          "benchmark_success": {
+            "by_family": {
+              "ci95_high": 0.1111111111111111,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.037037037037037035,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.075,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.025,
+              "replicates": 2000
+            },
+            "description": "benchmark reward success"
+          },
+          "delegated_useful_workload": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "useful workload completed by a checked program per episode"
+          },
+          "deterministic_actions": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "deterministic delegated actions per task"
+          },
+          "invalid_tool_actions": {
+            "by_family": {
+              "ci95_high": 0.2222222222222221,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.07407407407407403,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.125,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.05,
+              "replicates": 2000
+            },
+            "description": "invalid tool actions per task"
+          },
+          "latency_seconds": {
+            "by_family": {
+              "ci95_high": 0.4305849620614026,
+              "ci95_low": -2.62549775311426,
+              "clusters": 3,
+              "mean_difference": -0.805814982085522,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.6512504624974276,
+              "ci95_low": -2.132203460695746,
+              "clusters": 40,
+              "mean_difference": -0.5019525678275386,
+              "replicates": 2000
+            },
+            "description": "wall-clock latency seconds per task"
+          },
+          "protocol_violations": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.175,
+              "ci95_low": -0.2,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "solo communication protocol violations per task"
+          }
+        },
+        "qwen_exact_cache_minus_qwen_only": {
+          "action_contract_success": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "action-contract success"
+          },
+          "agent_model_calls": {
+            "by_family": {
+              "ci95_high": -1.8888888888888875,
+              "ci95_low": -5.133333333333334,
+              "clusters": 3,
+              "mean_difference": -3.236574074074074,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -2.1,
+              "ci95_low": -4.9,
+              "clusters": 40,
+              "mean_difference": -3.425,
+              "replicates": 2000
+            },
+            "description": "model calls per task"
+          },
+          "agent_tokens": {
+            "by_family": {
+              "ci95_high": -19825.555555555562,
+              "ci95_low": -54443.0,
+              "clusters": 3,
+              "mean_difference": -34284.62268518519,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -21936.686250000017,
+              "ci95_low": -52345.22875,
+              "clusters": 40,
+              "mean_difference": -36311.0,
+              "replicates": 2000
+            },
+            "description": "agent input + output tokens per task"
+          },
+          "benchmark_success": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "benchmark reward success"
+          },
+          "delegated_useful_workload": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "useful workload completed by a checked program per episode"
+          },
+          "deterministic_actions": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "deterministic delegated actions per task"
+          },
+          "invalid_tool_actions": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "invalid tool actions per task"
+          },
+          "latency_seconds": {
+            "by_family": {
+              "ci95_high": -8.511771881121604,
+              "ci95_low": -16.988621487134758,
+              "clusters": 3,
+              "mean_difference": -11.920886265678064,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -7.932894792416703,
+              "ci95_low": -16.89483735231119,
+              "clusters": 40,
+              "mean_difference": -12.08445153159919,
+              "replicates": 2000
+            },
+            "description": "wall-clock latency seconds per task"
+          },
+          "protocol_violations": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "solo communication protocol violations per task"
+          }
+        },
+        "qwen_simple_delegation_minus_qwen_only": {
+          "action_contract_success": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "action-contract success"
+          },
+          "agent_model_calls": {
+            "by_family": {
+              "ci95_high": -1.125,
+              "ci95_low": -2.666666666666666,
+              "clusters": 3,
+              "mean_difference": -1.663888888888889,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -1.1,
+              "ci95_low": -1.95,
+              "clusters": 40,
+              "mean_difference": -1.5,
+              "replicates": 2000
+            },
+            "description": "model calls per task"
+          },
+          "agent_tokens": {
+            "by_family": {
+              "ci95_high": -10522.125,
+              "ci95_low": -26247.888888888905,
+              "clusters": 3,
+              "mean_difference": -16383.160185185188,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -10871.480000000003,
+              "ci95_low": -19545.600000000002,
+              "clusters": 40,
+              "mean_difference": -14756.925,
+              "replicates": 2000
+            },
+            "description": "agent input + output tokens per task"
+          },
+          "benchmark_success": {
+            "by_family": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 3,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.0,
+              "ci95_low": 0.0,
+              "clusters": 40,
+              "mean_difference": 0.0,
+              "replicates": 2000
+            },
+            "description": "benchmark reward success"
+          },
+          "delegated_useful_workload": {
+            "by_family": {
+              "ci95_high": 2.0,
+              "ci95_low": 0.7333333333333333,
+              "clusters": 3,
+              "mean_difference": 1.2861111111111112,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 1.425,
+              "ci95_low": 0.925,
+              "clusters": 40,
+              "mean_difference": 1.175,
+              "replicates": 2000
+            },
+            "description": "useful workload completed by a checked program per episode"
+          },
+          "deterministic_actions": {
+            "by_family": {
+              "ci95_high": 4.0,
+              "ci95_low": 1.4666666666666666,
+              "clusters": 3,
+              "mean_difference": 2.5722222222222224,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 2.85,
+              "ci95_low": 1.85,
+              "clusters": 40,
+              "mean_difference": 2.35,
+              "replicates": 2000
+            },
+            "description": "deterministic delegated actions per task"
+          },
+          "invalid_tool_actions": {
+            "by_family": {
+              "ci95_high": 0.25,
+              "ci95_low": -1.0,
+              "clusters": 3,
+              "mean_difference": -0.25,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": 0.175,
+              "ci95_low": -0.525,
+              "clusters": 40,
+              "mean_difference": -0.125,
+              "replicates": 2000
+            },
+            "description": "invalid tool actions per task"
+          },
+          "latency_seconds": {
+            "by_family": {
+              "ci95_high": -4.967337964331577,
+              "ci95_low": -16.8534754938931,
+              "clusters": 3,
+              "mean_difference": -9.37670650205384,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -5.390900534597094,
+              "ci95_low": -11.320865103252235,
+              "clusters": 40,
+              "mean_difference": -8.178506141925027,
+              "replicates": 2000
+            },
+            "description": "wall-clock latency seconds per task"
+          },
+          "protocol_violations": {
+            "by_family": {
+              "ci95_high": -3.4375,
+              "ci95_low": -13.444444444444443,
+              "clusters": 3,
+              "mean_difference": -7.182870370370369,
+              "replicates": 2000
+            },
+            "by_task": {
+              "ci95_high": -3.774375000000003,
+              "ci95_low": -8.725,
+              "clusters": 40,
+              "mean_difference": -6.15,
+              "replicates": 2000
+            },
+            "description": "solo communication protocol violations per task"
+          }
+        }
+      },
+      "difference_direction": "left arm minus right arm, named in each comparison key",
+      "method": "paired nonparametric cluster bootstrap of within-cluster arm differences",
+      "not_bootstrapped": "Shared portfolio evidence, proof, and maintenance costs are not per-task observations; economic intervals require independent streams."
+    },
+    "stream_summary": {
+      "qwen_certified_skills_lpba": {
+        "amortized_total_cost_per_episode_descriptive": 0.7,
+        "benchmark_successes": 13,
+        "delegated_useful_workload": 47.0,
+        "deterministic_actions": 94,
+        "eligible_episodes": 30,
+        "episodes": 40,
+        "invalid_actions": 32,
+        "model_calls": 509,
+        "model_tokens": 5630434,
+        "online_certifiable_repair_obligations": 42,
+        "portfolio_evidence_cost": 22.0,
+        "portfolio_maintenance_cost": 0.0,
+        "portfolio_proof_cost": 6.0,
+        "portfolio_total_cost": 28.0,
+        "protocol_violations": 837,
+        "source_repair_obligations": 42
+      },
+      "qwen_exact_cache": {
+        "amortized_total_cost_per_episode_descriptive": 0.0,
+        "benchmark_successes": 12,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "eligible_episodes": 30,
+        "episodes": 40,
+        "invalid_actions": 35,
+        "model_calls": 430,
+        "model_tokens": 4755237,
+        "online_certifiable_repair_obligations": 0,
+        "portfolio_evidence_cost": 0.0,
+        "portfolio_maintenance_cost": 0.0,
+        "portfolio_proof_cost": 0.0,
+        "portfolio_total_cost": 0.0,
+        "protocol_violations": 1083,
+        "source_repair_obligations": 42
+      },
+      "qwen_only": {
+        "amortized_total_cost_per_episode_descriptive": 0.0,
+        "benchmark_successes": 12,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "eligible_episodes": 30,
+        "episodes": 40,
+        "invalid_actions": 35,
+        "model_calls": 567,
+        "model_tokens": 6207677,
+        "online_certifiable_repair_obligations": 0,
+        "portfolio_evidence_cost": 0.0,
+        "portfolio_maintenance_cost": 0.0,
+        "portfolio_proof_cost": 0.0,
+        "portfolio_total_cost": 0.0,
+        "protocol_violations": 1083,
+        "source_repair_obligations": 42
+      },
+      "qwen_simple_delegation": {
+        "amortized_total_cost_per_episode_descriptive": 0.7,
+        "benchmark_successes": 12,
+        "delegated_useful_workload": 47.0,
+        "deterministic_actions": 94,
+        "eligible_episodes": 30,
+        "episodes": 40,
+        "invalid_actions": 30,
+        "model_calls": 507,
+        "model_tokens": 5617400,
+        "online_certifiable_repair_obligations": 42,
+        "portfolio_evidence_cost": 22.0,
+        "portfolio_maintenance_cost": 0.0,
+        "portfolio_proof_cost": 6.0,
+        "portfolio_total_cost": 28.0,
+        "protocol_violations": 837,
+        "source_repair_obligations": 42
+      }
+    },
+    "tau2": {
+      "git_sha": "2174a603f6d014ef94473ffa95957f6ce27100db"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+# Controlled lifecycle mechanism comparison over the already-consumed telecom
+# test stream. This is not a new held-out efficacy test.
+tau2:
+  root: data/tau2-bench
+  split: test
+model:
+  id: Qwen/Qwen3.5-2B
+  revision: 15852e8c16360a2fea060d615a32b45270f8a8fc
+  agent_max_new_tokens: 256
+arms:
+  - {name: qwen_only, variant: qwen_only, max_agent_turns: 16}
+  - {name: qwen_exact_cache, variant: qwen_exact_cache, max_agent_turns: 16}
+  - {name: qwen_simple_delegation, variant: qwen_simple_delegation, max_agent_turns: 16}
+  - {name: qwen_certified_skills_lpba, variant: certified_skills_lpba, max_agent_turns: 16}
+lifecycle:
+  # These two reviewed source items are the complete policy support for the
+  # airplane repair write. The selection is source/train based: airplane has
+  # the largest predeclared train recurrence (40), not a test outcome.
+  event_id: reviewed-airplane-policy-v2
+  changed_evidence_items:
+    - tau2-telecom-reviewed-contract:airplane-policy
+    - tau2-telecom-reviewed-contract:airplane-proof-rule
+output_dir: results/tau2_telecom_lifecycle
+freeze:
+  sha256:
+    src/delegation_lab/ir.py: 051c0d9f679049997f683eb7135658e5c6091161bc90cbada3e1ca97b1461257
+    src/delegation_lab/evidence.py: 73dafc215e94096c82b373b733d6e262f562c1f02f0adf63446be85b70d635d8
+    src/delegation_lab/certify.py: d659efef15c02e65ec38b5b45606a4666c4ee0a96dbe2527f7e474634a51b2f2
+    src/delegation_lab/runtime.py: 54a1c5f11978cf360bb17a90bbcae42fd57e6c913e7cea4d3f28aa3af6ffe8dd
+    src/delegation_lab/lifecycle.py: a1e50a9178aaaeb1887b06118f0a6d4b198c880cf9092341fdfea184c0abe173
+    src/delegation_lab/skill.py: 030cc1d7515d4773f6a777318a8404e9f6d5d3ab68e15166c57b58b299c585d3
+    src/delegation_lab/skill_acquire.py: ad2565b4e220030595cd2c6b705e57c64d900fef3338fcbf00240e924d20ef65
+    src/delegation_lab/agent.py: a370939fb709797e8bc0aa8b3558eafef03d5ca5fa16087568c695031d4b65ad
+    src/delegation_lab/llm.py: cd8cf24f2b2bf5e9ac89e84343b2157ca24f74cf3e7616d8a46250cf6713395e
+    src/delegation_lab/qwen.py: d07f10acd09dec011fd47891e6d3ae8158706bc46154bbd62676c6aa5025d230
+    src/delegation_lab/adapters/tau2.py: 1c485e402cad76dfb3820de75698659776f87c78865f432e59b9aadfc249448f
+    src/delegation_lab/adapters/telecom_skills.py: e4a1456b57ffbec4797401673009359086005f427626593a351b897a78fe7d17
+    src/delegation_lab/experiments/tau2_retail.py: 2f55149d498a2c265095758e58f84eb6ec755792b56e8b50a2c231c7fbd2509d
+    src/delegation_lab/experiments/tau2_telecom_stream.py: 7da87bb53fb40f6ed3a675123192ea5f0b64a03fdad95cb0494bb1bfcf85c96e
+    src/delegation_lab/experiments/tau2_telecom_lifecycle.py: 160103ec0101644c977d58872195babd110b67f18a39527d1a0724d98fade64f

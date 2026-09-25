@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use these artifacts, cite the associated manuscript and repository."
+title: "Proof-Economic Delegation: Near-Optimal Acquisition of Reusable Formal Authority for Recurrent AI Agent Workloads"
+type: software
+authors:
+  - family-names: Kadyrbek
+    given-names: Nurgali
+    orcid: https://orcid.org/0000-0002-5461-8899
+  - family-names: Mansurova
+    given-names: Madina
+    orcid: https://orcid.org/0000-0002-9680-2758
+  - family-names: Postolache
+    given-names: Octavian Adrian
+    orcid: https://orcid.org/0000-0001-5055-6347
+repository-code: https://github.com/Nurgali-Kadyrbek/proof-economic-agents
+license: Apache-2.0
+date-released: 2026-09-25

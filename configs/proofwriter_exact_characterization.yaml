@@ -1,0 +1,23 @@
+# Frozen before opening source-order test theories 101–200 (zero-based 100:200).
+dataset:
+  root: data/proofwriter
+  split: test
+  depth: depth-5
+  start_index: 100
+  theory_count: 100
+  archive_sha256: bbc5694901e8306d0bd659aa1ad53ccfd02c201864f4b320ffa3777827d1fc26
+oracle:
+  max_relevant_evidence: 20
+  max_minimal_supports_per_literal: 10000
+  budget_fractions: [0.1, 0.25, 0.5, 0.75, 0.9]
+comparators:
+  - lpba
+  - lazy_first_use
+  - one_step_certification_voi
+  - workload_weighted_drd_hec
+  - eager_full_formalization
+workloads: [uniform, train_predicate_frequency]
+bootstrap:
+  seed: 20260925
+  repetitions: 10000
+output: results/proofwriter_exact_characterization/results.json

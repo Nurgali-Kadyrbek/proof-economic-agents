@@ -1,0 +1,56 @@
+[
+  {
+    "key": "proofwriter",
+    "doi": "10.18653/v1/2021.findings-acl.317",
+    "title_contains": "ProofWriter",
+    "why": "Published source benchmark paper"
+  },
+  {
+    "key": "minsum",
+    "doi": "10.1007/s00453-004-1110-5",
+    "title_contains": "Min Sum Set Cover",
+    "why": "Published scheduling/coverage antecedent"
+  },
+  {
+    "key": "hec",
+    "venue_exception": "PMLR proceedings are not DOI-indexed here",
+    "why": "Canonical hidden-outcome decision-region acquisition",
+    "bibtex": "@inproceedings{hec, title={Near Optimal Bayesian Active Learning for Decision Making}, author={Javdani, Shervin and Chen, Yuxin and Karbasi, Amin and Krause, Andreas and Bagnell, Drew and Srinivasa, Siddhartha}, booktitle={Proceedings of the Seventeenth International Conference on Artificial Intelligence and Statistics}, series={Proceedings of Machine Learning Research}, volume={33}, pages={430--438}, year={2014}, publisher={PMLR}, url={https://proceedings.mlr.press/v33/javdani14.html}}"
+  },
+  {
+    "key": "react",
+    "venue_exception": "ICLR 2023 official OpenReview proceedings",
+    "why": "Agent reasoning/action background",
+    "bibtex": "@inproceedings{react, title={ReAct: Synergizing Reasoning and Acting in Language Models}, author={Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan}, booktitle={International Conference on Learning Representations}, year={2023}, url={https://openreview.net/forum?id=WE_vluYUL-X}}"
+  },
+  {
+    "key": "taubench",
+    "venue_exception": "ICLR 2025 official OpenReview proceedings",
+    "why": "Published benchmark lineage for tool-agent-user policy tasks",
+    "bibtex": "@inproceedings{taubench, title={\\ensuremath{\\tau}-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains}, author={Yao, Shunyu and Shinn, Noah and Razavi, Pedram and Narasimhan, Karthik R.}, booktitle={International Conference on Learning Representations}, year={2025}, url={https://openreview.net/forum?id=roNSXZpUDN}}"
+  },
+  {
+    "key": "tau2source",
+    "input_exception": "First-party source checkout pinned by immutable commit",
+    "why": "Exact experimental input, not a literature claim",
+    "bibtex": "@misc{tau2source, author={{Sierra Research}}, title={\\ensuremath{\\tau}2-Bench Source Repository}, year={2026}, url={https://github.com/sierra-research/tau2-bench/tree/2174a603f6d014ef94473ffa95957f6ce27100db}, note={Experimental input at commit 2174a603f6d014ef94473ffa95957f6ce27100db}}"
+  },
+  {
+    "key": "qweninput",
+    "input_exception": "First-party model card pinned by immutable revision",
+    "why": "Exact experimental model input",
+    "bibtex": "@misc{qweninput, author={{Qwen Team}}, title={Qwen3.5-2B Model Card}, year={2026}, url={https://huggingface.co/Qwen/Qwen3.5-2B/tree/15852e8c16360a2fea060d615a32b45270f8a8fc}, note={Experimental input at revision 15852e8c16360a2fea060d615a32b45270f8a8fc}}"
+  },
+  {
+    "key": "pater",
+    "doi": "10.3390/make8070201",
+    "title_contains": "Primitive-Augmented Transformers",
+    "why": "Authors’ published work on explicit typed side-state and decoupled tool interfaces; directly motivates external checked authority boundary"
+  },
+  {
+    "key": "strata",
+    "doi": "10.3390/make8090269",
+    "title_contains": "STRATA-HeadQuotient",
+    "why": "Authors’ published work on typed predicate-graph computation; cited only for representational context"
+  }
+]

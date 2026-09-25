@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "proof-economic-agents"
+version = "0.1.0"
+description = "Reproducibility artifacts for proof-economic authority acquisition"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+dependencies = ["numpy>=1.26", "PyYAML>=6.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/delegation_lab"]
