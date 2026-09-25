@@ -1,6 +1,6 @@
 # Proof-Economic Delegation: public reproducibility artifacts
 
-This release accompanies the manuscript **Proof-Economic Delegation: Near-Optimal Acquisition of Reusable Formal Authority for Recurrent AI Agent Workloads** (target: *Big Data and Cognitive Computing*). It reproduces the paper's reported tables, figure, and in-text quantities from frozen results. The near-optimality claim concerns the stated formal-source acquisition objective on two ProofWriter cohorts. It is not a claim of general agent-quality improvement or verified translation of natural-language policy into proof rules.
+This release accompanies the manuscript **Proof-Economic Delegation: Near-Optimal Acquisition of Reusable Formal Authority for Recurrent AI Agent Workloads** (target: *Big Data and Cognitive Computing*). It reproduces the paper's reported tables, diagrams, graphs, and in-text quantities from frozen results. The near-optimality claim concerns the stated formal-source acquisition objective on two ProofWriter cohorts. It is not a claim of general agent-quality improvement or verified translation of natural-language policy into proof rules.
 
 ## Recreate manuscript inputs
 
@@ -12,7 +12,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 python scripts/audit_release.py
 ```
 
-`generated/` is the checked-in expected output. The unit test regenerates all six LaTeX inputs and compares their bytes. No model weights, raw customer transcripts, or GPU is needed for this step. `results/tau2_telecom_stream_heldout/public_summary.json` contains aggregate results derived from the frozen local agent run, with its SHA-256 provenance. It does not permit replay of individual model conversations. The public claim about telecom is limited accordingly.
+`generated/` is the checked-in expected output. The unit test regenerates every LaTeX input and compares its bytes. No model weights, raw customer transcripts, or GPU is needed for this step. `results/tau2_telecom_stream_heldout/public_summary.json` contains aggregate results; `public_trace.json` contains only dialogue-free episode metrics. Both identify the local raw result files by SHA-256. The trace reproduces the cumulative-call and lifecycle plots but does not permit replay of individual model conversations or independent semantic audit of them. The public claim about telecom is limited accordingly.
 
 ## Re-run the exact ProofWriter analysis
 
@@ -30,8 +30,8 @@ The banking artifact is one development catalog. Its packet costs and values are
 
 - `src/`: model-independent authority, proof, acquisition, and exact ProofWriter analysis code used by the reported studies.
 - `configs/`, `docs/`: frozen study designs and methods.
-- `results/`: source-order, stress, skew, banking, and aggregate telecom artifacts. The large train-prior artifact is retained because its exact bytes are checked by the frozen runs.
-- `generated/`: publication LaTeX quantities, complete tables, and a native pgfplots figure.
+- `results/`: source-order, stress, skew, banking, and aggregate and episode-metric telecom artifacts. The large train-prior artifact is retained because its exact bytes are checked by the frozen runs.
+- `generated/`: publication LaTeX quantities, complete tables, and native TikZ/pgfplots figures.
 - `scripts/`: generation, verified DOI bibliography construction, checksum and release audit.
 - `tests/`: artifact and exact-objective consistency checks.
 

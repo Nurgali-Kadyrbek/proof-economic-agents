@@ -70,4 +70,17 @@ class ReleaseChecks(unittest.TestCase):
         self.assertEqual(s['studies']['uniform']['summary']['exact_theory_count'],100)
         self.assertFalse(f['exclusions']);self.assertFalse(s['support_limit_exclusions'])
 
+    def test_public_episode_trace_reconciles_with_aggregate(self):
+        trace = json.loads((ROOT / 'results/tau2_telecom_stream_heldout/public_trace.json').read_text())
+        summary = json.loads((ROOT / 'results/tau2_telecom_stream_heldout/public_summary.json').read_text())
+        self.assertEqual(trace['schema_version'], 'public-episode-metrics-v1')
+        for arm, rows in trace['stream_arms'].items():
+            self.assertEqual(len(rows), 40)
+            self.assertEqual([x['episode'] for x in rows], list(range(1, 41)))
+            self.assertEqual(sum(x['agent_model_calls'] for x in rows), summary['stream']['stream_summary'][arm]['model_calls'])
+        phases = trace['lifecycle_arms']['qwen_certified_skills_lpba']
+        self.assertEqual(sum(x['valid_deterministic_executions'] for phase in phases.values() for x in phase),
+                         summary['lifecycle']['phase_summary']['qwen_certified_skills_lpba']['entire_lifecycle']['complete_workload']['valid_deterministic_executions'])
+        self.assertEqual(sum(x['stale_or_invalid_deterministic_executions'] for phase in phases.values() for x in phase), 0)
+
 if __name__ == '__main__': unittest.main()

@@ -1,0 +1,3726 @@
+{
+  "lifecycle_arms": {
+    "qwen_certified_skills_lpba": {
+      "post_change": [
+        {
+          "active_programs_after_episode": 2,
+          "active_programs_at_start": 2,
+          "agent_model_calls": 15,
+          "episode": 1,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 2,
+          "agent_model_calls": 14,
+          "episode": 2,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 3,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 4,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 5,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 6,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 7,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 8,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 9,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 10,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 11,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 12,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 13,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 14,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 15,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 16,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 17,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 18,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 19,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 20,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 21,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 22,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 8,
+          "episode": 23,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 24,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 25,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 26,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 27,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 28,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 29,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 30,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 31,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 32,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 33,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 34,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 35,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 36,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 37,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 38,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 39,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 40,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        }
+      ],
+      "pre_change": [
+        {
+          "active_programs_after_episode": 1,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 1,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 2,
+          "active_programs_at_start": 1,
+          "agent_model_calls": 14,
+          "episode": 2,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 2,
+          "agent_model_calls": 14,
+          "episode": 3,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 4,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 5,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 6,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 7,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 8,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 9,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 10,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 11,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 12,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 13,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 14,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 15,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 16,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 17,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 18,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 19,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 20,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 21,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 22,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 8,
+          "episode": 23,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 24,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 25,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 26,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 27,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 28,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 29,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 30,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 31,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 32,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 33,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 34,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 35,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 36,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 37,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 38,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 39,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 40,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        }
+      ]
+    },
+    "qwen_exact_cache": {
+      "post_change": [
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 1,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 2,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 3,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 4,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 5,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 6,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 7,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 8,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 9,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 10,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 11,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 12,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 13,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 14,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 15,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 16,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 17,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 18,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 19,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 20,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 21,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 22,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 23,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 24,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 25,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 26,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 27,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 28,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 29,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 30,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 31,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 32,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 33,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 34,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 35,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 36,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 37,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 38,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 39,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 40,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        }
+      ],
+      "pre_change": [
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 1,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 2,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 3,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 13,
+          "episode": 4,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 5,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 6,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 6,
+          "episode": 7,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 8,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 14,
+          "episode": 9,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 10,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 11,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 12,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 8,
+          "episode": 13,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 13,
+          "episode": 14,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 15,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 16,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 13,
+          "episode": 17,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 10,
+          "episode": 18,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 19,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 20,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 21,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 22,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 5,
+          "episode": 23,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 24,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 25,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 26,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 27,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 28,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 29,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 30,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 31,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 1,
+          "episode": 32,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 33,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 34,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 35,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 36,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 37,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 38,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 15,
+          "episode": 39,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 0,
+          "episode": 40,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        }
+      ]
+    },
+    "qwen_only": {
+      "post_change": [
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 1,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 2,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 3,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 13,
+          "episode": 4,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 5,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 6,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 7,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 8,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 9,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 10,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 11,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 12,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 13,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 14,
+          "episode": 14,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 15,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 16,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 17,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 18,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 8,
+          "episode": 19,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 8,
+          "episode": 20,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 21,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 22,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 8,
+          "episode": 23,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 8,
+          "episode": 24,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 25,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 26,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 27,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 28,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 29,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 30,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 31,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 32,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 33,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 34,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 35,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 36,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 37,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 38,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 39,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 40,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        }
+      ],
+      "pre_change": [
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 1,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 2,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 3,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 13,
+          "episode": 4,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 5,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 6,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 7,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 8,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 9,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 10,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 11,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 12,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 13,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 14,
+          "episode": 14,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 15,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 16,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 17,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 18,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 8,
+          "episode": 19,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 8,
+          "episode": 20,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 21,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 7,
+          "episode": 22,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 8,
+          "episode": 23,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 8,
+          "episode": 24,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 25,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 26,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 27,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 28,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 29,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 30,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 31,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 32,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 33,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 34,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 35,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 36,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 37,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 38,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 39,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 0,
+          "active_programs_at_start": 0,
+          "agent_model_calls": 16,
+          "episode": 40,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        }
+      ]
+    },
+    "qwen_simple_delegation": {
+      "post_change": [
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 1,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 2,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 3,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 4,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 5,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 6,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 7,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 8,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 9,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 10,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 11,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 12,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 13,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 14,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 15,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 16,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 17,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 18,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 19,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 20,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 21,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 22,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 8,
+          "episode": 23,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 24,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 25,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 26,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 27,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 28,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 29,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 30,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 31,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 32,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 33,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 34,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 35,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 36,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 37,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 38,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 39,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 40,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        }
+      ],
+      "pre_change": [
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 1,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 2,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 3,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 4,
+          "episode": 4,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 5,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 6,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 7,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 8,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 13,
+          "episode": 9,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 3
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 10,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 11,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 12,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 13,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 14,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 15,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 16,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 17,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 18,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 19,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 20,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 21,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 5,
+          "episode": 22,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 8,
+          "episode": 23,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 6,
+          "episode": 24,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 25,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 26,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 27,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 28,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 29,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 30,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 16,
+          "episode": 31,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 0
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 32,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 33,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 34,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 35,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 36,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 15,
+          "episode": 37,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 1
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 38,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 39,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        },
+        {
+          "active_programs_after_episode": 3,
+          "active_programs_at_start": 3,
+          "agent_model_calls": 14,
+          "episode": 40,
+          "stale_or_invalid_deterministic_executions": 0,
+          "valid_deterministic_executions": 2
+        }
+      ]
+    }
+  },
+  "lifecycle_event": {
+    "after_pre_change_episode": 40,
+    "payload_changed": false
+  },
+  "lifecycle_source_sha256": "4a83d21ce05d4cfa482e83e702b00937f156fa969f36488b711c4f2737eb4a13",
+  "note": "Only episode-level numerical metrics; no task identifiers, messages, tool payloads, or dialogue.",
+  "schema_version": "public-episode-metrics-v1",
+  "stream_arms": {
+    "qwen_certified_skills_lpba": [
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 1
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": true,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 2
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 3
+      },
+      {
+        "agent_model_calls": 6,
+        "benchmark_success": true,
+        "delegated_useful_workload": 3.0,
+        "deterministic_actions": 6,
+        "episode": 4
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 5
+      },
+      {
+        "agent_model_calls": 13,
+        "benchmark_success": false,
+        "delegated_useful_workload": 3.0,
+        "deterministic_actions": 6,
+        "episode": 6
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 7
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 8
+      },
+      {
+        "agent_model_calls": 13,
+        "benchmark_success": false,
+        "delegated_useful_workload": 3.0,
+        "deterministic_actions": 6,
+        "episode": 9
+      },
+      {
+        "agent_model_calls": 5,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 10
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 11
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 12
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 13
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 14
+      },
+      {
+        "agent_model_calls": 5,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 15
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 16
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 17
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 18
+      },
+      {
+        "agent_model_calls": 6,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 19
+      },
+      {
+        "agent_model_calls": 6,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 20
+      },
+      {
+        "agent_model_calls": 5,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 21
+      },
+      {
+        "agent_model_calls": 5,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 22
+      },
+      {
+        "agent_model_calls": 8,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 23
+      },
+      {
+        "agent_model_calls": 6,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 24
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 25
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 26
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 27
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 28
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 29
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 30
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 31
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 32
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 33
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 34
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 35
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 36
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 37
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 38
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 39
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 40
+      }
+    ],
+    "qwen_exact_cache": [
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 1
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 2
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 3
+      },
+      {
+        "agent_model_calls": 13,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 4
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 5
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 6
+      },
+      {
+        "agent_model_calls": 6,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 7
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 8
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 9
+      },
+      {
+        "agent_model_calls": 7,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 10
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 11
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 12
+      },
+      {
+        "agent_model_calls": 8,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 13
+      },
+      {
+        "agent_model_calls": 13,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 14
+      },
+      {
+        "agent_model_calls": 0,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 15
+      },
+      {
+        "agent_model_calls": 0,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 16
+      },
+      {
+        "agent_model_calls": 13,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 17
+      },
+      {
+        "agent_model_calls": 10,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 18
+      },
+      {
+        "agent_model_calls": 7,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 19
+      },
+      {
+        "agent_model_calls": 0,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 20
+      },
+      {
+        "agent_model_calls": 0,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 21
+      },
+      {
+        "agent_model_calls": 0,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 22
+      },
+      {
+        "agent_model_calls": 5,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 23
+      },
+      {
+        "agent_model_calls": 0,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 24
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 25
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 26
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 27
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 28
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 29
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 30
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 31
+      },
+      {
+        "agent_model_calls": 1,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 32
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 33
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 34
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 35
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 36
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 37
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 38
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 39
+      },
+      {
+        "agent_model_calls": 0,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 40
+      }
+    ],
+    "qwen_only": [
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 1
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 2
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 3
+      },
+      {
+        "agent_model_calls": 13,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 4
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 5
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 6
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 7
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 8
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 9
+      },
+      {
+        "agent_model_calls": 7,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 10
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 11
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 12
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 13
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 14
+      },
+      {
+        "agent_model_calls": 7,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 15
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 16
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 17
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 18
+      },
+      {
+        "agent_model_calls": 8,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 19
+      },
+      {
+        "agent_model_calls": 8,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 20
+      },
+      {
+        "agent_model_calls": 7,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 21
+      },
+      {
+        "agent_model_calls": 7,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 22
+      },
+      {
+        "agent_model_calls": 8,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 23
+      },
+      {
+        "agent_model_calls": 8,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 24
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 25
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 26
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 27
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 28
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 29
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 30
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 31
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 32
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 33
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 34
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 35
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 36
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 37
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 38
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 39
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 40
+      }
+    ],
+    "qwen_simple_delegation": [
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 1
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 2
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 3
+      },
+      {
+        "agent_model_calls": 4,
+        "benchmark_success": true,
+        "delegated_useful_workload": 3.0,
+        "deterministic_actions": 6,
+        "episode": 4
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 5
+      },
+      {
+        "agent_model_calls": 13,
+        "benchmark_success": false,
+        "delegated_useful_workload": 3.0,
+        "deterministic_actions": 6,
+        "episode": 6
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 7
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 8
+      },
+      {
+        "agent_model_calls": 13,
+        "benchmark_success": false,
+        "delegated_useful_workload": 3.0,
+        "deterministic_actions": 6,
+        "episode": 9
+      },
+      {
+        "agent_model_calls": 5,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 10
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 11
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 12
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 13
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 14
+      },
+      {
+        "agent_model_calls": 5,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 15
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 16
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 17
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 18
+      },
+      {
+        "agent_model_calls": 6,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 19
+      },
+      {
+        "agent_model_calls": 6,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 20
+      },
+      {
+        "agent_model_calls": 5,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 21
+      },
+      {
+        "agent_model_calls": 5,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 22
+      },
+      {
+        "agent_model_calls": 8,
+        "benchmark_success": true,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 23
+      },
+      {
+        "agent_model_calls": 6,
+        "benchmark_success": true,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 24
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 25
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 26
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 27
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 28
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 29
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 30
+      },
+      {
+        "agent_model_calls": 16,
+        "benchmark_success": false,
+        "delegated_useful_workload": 0.0,
+        "deterministic_actions": 0,
+        "episode": 31
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 32
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 33
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 34
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 35
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 36
+      },
+      {
+        "agent_model_calls": 15,
+        "benchmark_success": false,
+        "delegated_useful_workload": 1.0,
+        "deterministic_actions": 2,
+        "episode": 37
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 38
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 39
+      },
+      {
+        "agent_model_calls": 14,
+        "benchmark_success": false,
+        "delegated_useful_workload": 2.0,
+        "deterministic_actions": 4,
+        "episode": 40
+      }
+    ]
+  },
+  "stream_source_sha256": "a5d976980f0e631993ec8b1f183fc96240336c4c17e30ffa3f972e1f4a1b7d2e"
+}

@@ -1,0 +1,16 @@
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=.86\textwidth,height=5.5cm,xlabel={Replay episode (pre-change then post-change)},ylabel={Active certificates at episode start},xmin=0,xmax=80,ymin=0,ymax=4,ytick={0,1,2,3,4},grid=major,axis y line*=left,legend pos=north west]
+\addplot+[black,mark=none,thick,const plot] coordinates {(0,0) (1,0) (2,1) (3,2) (4,3) (5,3) (6,3) (7,3) (8,3) (9,3) (10,3) (11,3) (12,3) (13,3) (14,3) (15,3) (16,3) (17,3) (18,3) (19,3) (20,3) (21,3) (22,3) (23,3) (24,3) (25,3) (26,3) (27,3) (28,3) (29,3) (30,3) (31,3) (32,3) (33,3) (34,3) (35,3) (36,3) (37,3) (38,3) (39,3) (40,3) (41,2) (42,2) (43,3) (44,3) (45,3) (46,3) (47,3) (48,3) (49,3) (50,3) (51,3) (52,3) (53,3) (54,3) (55,3) (56,3) (57,3) (58,3) (59,3) (60,3) (61,3) (62,3) (63,3) (64,3) (65,3) (66,3) (67,3) (68,3) (69,3) (70,3) (71,3) (72,3) (73,3) (74,3) (75,3) (76,3) (77,3) (78,3) (79,3) (80,3)};
+\addlegendentry{Active certificates}
+\draw[black,dashed] (axis cs:40.5,0) -- (axis cs:40.5,4);
+\node[anchor=north west,font=\scriptsize] at (axis cs:41,3.9) {version event};
+\end{axis}
+\begin{axis}[width=.86\textwidth,height=5.5cm,xmin=0,xmax=80,ymin=0,ymax=105,ylabel={Cumulative valid executions},axis y line*=right,axis x line=none,ytick={0,25,50,75,100},legend pos=south east]
+\addplot+[black,dashed,mark=none,thick] coordinates {(0,0) (1,1) (2,3) (3,5) (4,8) (5,9) (6,12) (7,13) (8,15) (9,18) (10,19) (11,20) (12,21) (13,22) (14,22) (15,23) (16,24) (17,24) (18,24) (19,25) (20,26) (21,27) (22,28) (23,28) (24,29) (25,30) (26,31) (27,31) (28,31) (29,32) (30,33) (31,33) (32,34) (33,36) (34,37) (35,38) (36,40) (37,41) (38,43) (39,45) (40,47) (41,48) (42,50) (43,52) (44,55) (45,56) (46,59) (47,60) (48,62) (49,65) (50,66) (51,67) (52,68) (53,69) (54,69) (55,70) (56,71) (57,71) (58,71) (59,72) (60,73) (61,74) (62,75) (63,75) (64,76) (65,77) (66,78) (67,78) (68,78) (69,79) (70,80) (71,80) (72,81) (73,83) (74,84) (75,85) (76,88) (77,89) (78,91) (79,94) (80,97)};
+\addlegendentry{Valid executions}
+\end{axis}
+\end{tikzpicture}
+\caption{Controlled metadata-version replay in the checked LPBA arm. One affected certificate is absent at the first post-change episode and reappears after revalidation; unaffected authority persists. Valid executions accumulate across both phases; stale deterministic executions are reported in the text. The source payload itself was unchanged.\label{fig:lifecycle}}
+\end{figure}

@@ -1,0 +1,14 @@
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,box/.style={draw,rounded corners,align=center,minimum height=8mm,text width=22mm},arrow/.style={->,>=stealth,thick},node distance=4mm]
+\node[box] (source) {Versioned\\reviewed sources};
+\node[box,right=of source] (support) {Complete\\proof support};
+\node[box,right=of support] (check) {Checker and\\certificate};
+\node[box,right=of check] (registry) {Persistent\\authority registry};
+\node[box,right=of registry] (runtime) {Guarded\\tool execution};
+\draw[arrow] (source)--(support);\draw[arrow] (support)--(check);\draw[arrow] (check)--(registry);\draw[arrow] (registry)--(runtime);
+\node[box,below=9mm of registry] (event) {Source version\\event};
+\draw[arrow] (event)--node[right,font=\scriptsize] {suspend affected} (registry);
+\end{tikzpicture}
+\caption{Operational path from reviewed semantics to deterministic action. A certificate records source dependencies; the registry checks versions and request-state guards before execution. A changed dependency suspends affected authority until revalidated.\label{fig:system}}
+\end{figure}

@@ -21,11 +21,27 @@ def table(label: str, caption: str, headers: list[str], rows: list[list[str]], s
     width = len(headers)
     if any(len(row) != width for row in rows):
         raise ValueError(f'{label}: row/header column mismatch')
-    lines = [r'\begin{table}[H]', rf'\caption{{{caption}\label{{{label}}}}}', r'\centering\small',
+    lines = [r'\begin{table}[H]', rf'\caption{{{caption}\label{{{label}}}}}', r'\centering\small\renewcommand{\arraystretch}{1.08}',
              rf'\begin{{tabular}}{{{spec}}}', r'\toprule', ' & '.join(headers) + r' \\', r'\midrule']
     lines += [' & '.join(row) + r' \\' for row in rows]
     lines += [r'\bottomrule', r'\end{tabular}', r'\end{table}', '']
     return '\n'.join(lines)
+
+
+def points(values, fmt='.3f'):
+    return ' '.join(f'({x:{fmt}},{y:{fmt}})' for x,y in values)
+
+
+def regret_percent(theory):
+    optimum = theory['exact']['auc']
+    return max(0.0, 100 * (optimum - theory['policies']['lpba']['auc']) / optimum)
+
+
+def quantile(values, q):
+    ordered = sorted(values)
+    index = (len(ordered)-1)*q
+    low = int(index)
+    return ordered[low] + (ordered[min(low+1,len(ordered)-1)]-ordered[low])*(index-low)
 
 
 def main() -> None:
@@ -40,16 +56,23 @@ def main() -> None:
     bank = read(root, 'banking_exact_separable/results.json')
     budget = read(root, 'banking_exact_separable/budget_conditioned.json')
     agent = read(root, 'tau2_telecom_stream_heldout/public_summary.json')
+    trace = read(root, 'tau2_telecom_stream_heldout/public_trace.json')
     assert fresh['schema_version'] == 'proofwriter-exact-characterization-v1'
     assert stress['schema_version'] == 'proofwriter-structural-stress-v1'
     assert bank['schema_version'] == 'banking-separable-exact-development-audit-v1'
     assert budget['catalog_digest'] == bank['source']['catalog_digest']
+    assert trace['schema_version'] == 'public-episode-metrics-v1'
     fs = fresh['studies']['uniform']['summary']; ss = stress['studies']['uniform']['summary']
     assert len(fresh['studies']['uniform']['theories']) == fs['theory_count']
     assert len(stress['studies']['uniform']['theories']) == ss['theory_count']
     stream = agent['stream']['stream_summary']; life = agent['lifecycle']
     base = stream['qwen_only']; lpba = stream['qwen_certified_skills_lpba']; cache = stream['qwen_exact_cache']
     call_delta = base['model_calls'] - lpba['model_calls']
+    assert sum(x['agent_model_calls'] for x in trace['stream_arms']['qwen_only']) == base['model_calls']
+    assert sum(x['agent_model_calls'] for x in trace['stream_arms']['qwen_certified_skills_lpba']) == lpba['model_calls']
+    ft = fresh['studies']['uniform']['theories']; st = stress['studies']['uniform']['theories']
+    fg = [regret_percent(x) for x in ft]; sg = [regret_percent(x) for x in st]
+    wins = lambda data: sum(x['policies']['lpba']['auc'] > x['policies']['lazy_first_use']['auc'] + 1e-8 for x in data)
     pct = lambda x, p=2: f'{100*x:.{p}f}\\%'
     num = lambda x, p=3: f'{x:.{p}f}'
     m = []
@@ -96,6 +119,19 @@ def main() -> None:
         'SkewRegret': pct(skew['summaries']['3.0']['lpba_relative_gap']['mean']),
         'SkewWeightCv': num(skew['summaries']['3.0']['mean_observed_weight_cv'],2),
         'BootstrapCount': str(fs['relative_lpba_gap_to_exact']['bootstrap_repetitions']),
+        'FreshOracleCap': str(fresh['oracle']['max_relevant_evidence']),
+        'StressOracleCap': str(stress['oracle']['max_relevant_evidence']),
+        'SupportCap': str(fresh['oracle']['max_minimal_supports_per_literal']),
+        'FreshMedianRegret': pct(quantile(fg,.5)/100),
+        'StressMedianRegret': pct(quantile(sg,.5)/100),
+        'FreshNinetiethRegret': pct(quantile(fg,.9)/100),
+        'StressNinetiethRegret': pct(quantile(sg,.9)/100),
+        'FreshWinCount': str(wins(ft)), 'StressWinCount': str(wins(st)),
+        'StressMedianComplementarity': pct(median(x['features']['complementarity_fraction'] for x in st),0),
+        'FreshMedianComplementarity': pct(median(x['features']['complementarity_fraction'] for x in ft),0),
+        'BankTenthExact': str(int(budget['budget_frontiers']['0.1']['exact_value'])),
+        'BankTenthLpba': str(int(budget['budget_frontiers']['0.1']['budget_conditioned_lpba_value'])),
+        'BankEarlyBudget': str(int(budget['budget_frontiers']['0.1']['budget'])),
     }
     for k,v in vals.items(): m.append(macro(k,v))
     (out/'numbers.tex').write_text(''.join(m))
@@ -136,16 +172,183 @@ def main() -> None:
     (out/'table_telecom.tex').write_text(table('tab:telecom',
         'One pinned local telecom stream. Review units have no validated conversion to money or inference cost; success differences are not evidence of a general quality gain.',
         ['Arm','Model calls','Success','Useful skills','Review units'],rows,'lrrrr'))
+    (out/'table_design.tex').write_text(table('tab:design',
+        'Frozen study design and inferential unit. The two ProofWriter cohorts share one dataset release; banking and telecom each contain one catalog or stream.',
+        ['Study','Source / selection','Unit','Primary endpoint'],[
+            ['Source-order',f'ProofWriter test, depth five; {fs["theory_count"]} consecutive theories','Theory','Whole-order area'],
+            ['Structural stress',f'ProofWriter test, depth five; {ss["theory_count"]} eligible theories','Theory','Whole-order area'],
+            ['Banking regime',f'Pinned policy catalog; {bank["assumptions_verified"]["family_count"]} packets','Catalog','Exact area / budget value'],
+            ['Telecom stream',f'Pinned agent stream; {base["episodes"]} tickets','Stream','Calls / checked use'],
+            ['Version replay',f'Two phases of {base["episodes"]} tickets','Replay','Stale executions'],
+        ],r'>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{5cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}p{3.0cm}'))
+    (out/'table_regimes.tex').write_text(table('tab:regimes',
+        'Decision rule implied by the objective and proved or observed support structure. The LPBA row is an empirical finding on the evaluated exact-solvable cohorts, not a general approximation guarantee.',
+        ['Condition','Operational objective','Acquisition rule','Basis'],[
+            ['Zero-delay unique supports','Realized cost on encountered regions','Lazy First-Use','Proposition~\\ref{prop:firstuse}'],
+            ['Common core, disjoint packets','Whole-order area','Descending $w_i/c_i$','Proposition~\\ref{prop:separable}'],
+            ['Common core, disjoint packets','Authority at a fixed budget','Packet knapsack','Proposition~\\ref{prop:separable}'],
+            ['Alternative or complementary supports','Whole-order area','Bounded proof-directed LPBA','Exact-oracle cohorts'],
+        ],r'>{\raggedright\arraybackslash}p{3.1cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{2.9cm}'))
     coords=' '.join(f'({skew["summaries"][a]["mean_observed_weight_cv"]:.3f},{100*skew["summaries"][a]["lpba_relative_gap"]["mean"]:.3f})' for a in ['0.0','0.75','1.5','3.0'])
+    intervals='\n'.join(r'\draw[black,thick] (axis cs:'+f'{skew["summaries"][a]["mean_observed_weight_cv"]:.3f},{100*skew["summaries"][a]["lpba_relative_gap"]["ci95"][0]:.3f}) -- (axis cs:{skew["summaries"][a]["mean_observed_weight_cv"]:.3f},{100*skew["summaries"][a]["lpba_relative_gap"]["ci95"][1]:.3f});' for a in ['0.0','0.75','1.5','3.0'])
     (out/'figure_skew.tex').write_text(r'''\begin{figure}[H]
 \centering
 \begin{tikzpicture}
 \begin{axis}[width=0.80\textwidth,height=5.2cm,xlabel={Mean within-theory workload-weight CV},ylabel={Mean LPBA regret to exact (\%)},xmin=0,xmax=1.55,ymin=0,ymax=3.0,grid=major,legend pos=north east]
 \addplot+[black,mark=square*,thick] coordinates {'''+coords+r'''};
 \addlegendentry{Controlled hash-rank weights}
+'''+intervals+r'''
 \end{axis}
 \end{tikzpicture}
-\caption{Post-hoc sensitivity on the same structural-stress support graphs; the nonzero settings average three fixed hash seeds per theory. This is synthetic demand, not observed traffic.\label{fig:skew}}
+\caption{Post-hoc sensitivity on the same structural-stress support graphs; vertical bars show theory-bootstrap 95\% intervals. Nonzero settings average three fixed hash seeds per theory. This is synthetic demand, not observed traffic.\label{fig:skew}}
+\end{figure}
+''')
+    # Each figure is a complete float; all plotted numerical coordinates come from frozen artifacts.
+    ecdf=[]
+    for vals in (fg,sg):
+        ordered=sorted(vals)
+        ecdf.append(points([(v,(i+1)/len(ordered)) for i,v in enumerate(ordered)]))
+    (out/'figure_regret_ecdf.tex').write_text(r'''\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=.89\textwidth,height=6.0cm,xlabel={Per-theory LPBA regret to exact oracle (\%)},ylabel={Fraction of theories at or below regret},xmin=0,xmax=12,ymin=0,ymax=1.02,grid=major,legend pos=south east]
+\addplot+[black,mark=none,thick,const plot] coordinates {'''+ecdf[0]+r'''};
+\addlegendentry{Source-order cohort}
+\addplot+[black,dashed,mark=none,thick,const plot] coordinates {'''+ecdf[1]+r'''};
+\addlegendentry{Structural-stress cohort}
+\end{axis}
+\end{tikzpicture}
+\caption{Empirical distribution across independent theories within each nonoverlapping cohort. A point at zero means LPBA matches the exact whole-order value; the structural-stress cohort was selected on support structure, not sampled as a population estimate.\label{fig:regret}}
+\end{figure}
+''')
+    frontiers=[]
+    for summary in (fs,ss):
+        curves=[]
+        for policy in ('exact','lpba','lazy_first_use','one_step_certification_voi'):
+            curves.append(points([(100*float(f), x['exact_mean_weight'] if policy=='exact' else x['policy_mean_weight'][policy])
+                                  for f,x in sorted(summary['budget_frontiers'].items(),key=lambda z:float(z[0]))]))
+        frontiers.append(curves)
+    axisopts=r'width=.48\textwidth,height=5.1cm,xlabel={Budget (\% of source cost)},ylabel={Mean certified workload},xmin=5,xmax=95,grid=major,legend style={font=\scriptsize},legend pos=south east'
+    lines=[]
+    styles=('black,solid,mark=*','black,dashed,mark=square*','black,dotted,mark=triangle*','black,dashdotted,mark=diamond*')
+    labels=('Exact','LPBA','First-Use','One-step')
+    for title,curves in zip(('Source order','Structural stress'),frontiers):
+        lines.append(r'\begin{axis}['+axisopts+',title={'+title+r'}]')
+        for style,label,coord in zip(styles,labels,curves):
+            lines.append(r'\addplot+['+style+'] coordinates {'+coord+r'};')
+            lines.append(r'\addlegendentry{'+label+'}')
+        lines.append(r'\end{axis}')
+    (out/'figure_budget_frontiers.tex').write_text(r'''\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+'''+r'\begin{scope}[xshift=-.25\textwidth]'+'\n'.join(lines[:10])+r'\end{scope}'+'\n'+r'\begin{scope}[xshift=.25\textwidth]'+'\n'.join(lines[10:])+r'\end{scope}'+r'''
+\end{tikzpicture}
+\caption{Fixed-order affordable-prefix performance at five predefined budget fractions. Each point averages the same theories as the area analysis. Curves connect sampled budgets for visual guidance; no intervening budget values are claimed.\label{fig:budget}}
+\end{figure}
+''')
+    # Ratio order and observed LPBA atomic purchases on the single separable catalog.
+    ratio_steps=[(0.0,0.0),(bank['common_core_cost'],0.0)]
+    paid=bank['common_core_cost']; certified=0.0
+    for family in bank['ratio_order']:
+        paid+=bank['packet_cost'][family]; certified+=bank['packet_value'][family]
+        ratio_steps.append((paid,certified))
+    lpba_steps=[(0.0,0.0)]; paid=0.0; certified_families=set()
+    for step in bank['lpba_global_steps']:
+        paid+=step['cost']; certified_families.update(step['regions'])
+        lpba_steps.append((paid,sum(bank['packet_value'][i] for i in certified_families)))
+    assert round(paid,8)==round(bank['total_cost'],8)
+    bank_frontier=[]
+    for key,x in sorted(budget['budget_frontiers'].items(),key=lambda z:float(z[0])):
+        bank_frontier.append((x['budget'],x['exact_value'],x['budget_conditioned_lpba_value']))
+    (out/'figure_banking.tex').write_text(r'''\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=.86\textwidth,height=5.5cm,xlabel={Cumulative declared review cost},ylabel={Certified development workload},xmin=0,xmax=370,ymin=0,ymax=280,grid=major,legend pos=south east]
+\addplot+[black,thick,mark=none,const plot] coordinates {'''+points(ratio_steps,'.1f')+r'''};
+\addlegendentry{Exact ratio order}
+\addplot+[black,dashed,thick,mark=none,const plot] coordinates {'''+points(lpba_steps,'.1f')+r'''};
+\addlegendentry{LPBA global order}
+\addplot+[only marks,mark=*,black] coordinates {'''+points([(x,y) for x,y,_ in bank_frontier],'.1f')+r'''};
+\addlegendentry{Exact hard-budget values}
+\addplot+[only marks,mark=x,black] coordinates {'''+points([(x,z) for x,_,z in bank_frontier],'.1f')+r'''};
+\addlegendentry{Budget-conditioned LPBA}
+\end{axis}
+\end{tikzpicture}
+\caption{One document-derived banking catalog. Step lines show completed-packet authority in whole-order schedules; isolated markers are separately optimized hard-budget outcomes. The connected lines do not interpolate the fixed-budget optima.\label{fig:bank}}
+\end{figure}
+''')
+    arms=[('qwen_only','Qwen only','black,solid,mark=none'),('qwen_exact_cache','Exact cache','black,dotted,mark=none'),
+          ('qwen_simple_delegation','Simple delegation','black,dashdotted,mark=none'),
+          ('qwen_certified_skills_lpba','Checked LPBA','black,dashed,mark=none')]
+    callplots=[]
+    for key,label,style in arms:
+        total=0; series=[(0,0)]
+        for row in trace['stream_arms'][key]:
+            total+=row['agent_model_calls'];series.append((row['episode'],total))
+        callplots += [r'\addplot+['+style+'] coordinates {'+points(series,'.0f')+r'};',r'\addlegendentry{'+label+'}']
+        assert total==stream[key]['model_calls']
+    (out/'figure_telecom_calls.tex').write_text(r'''\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=.86\textwidth,height=6cm,xlabel={Completed telecom episodes},ylabel={Cumulative agent-model calls},xmin=0,xmax=40,ymin=0,grid=major,legend pos=north west,legend style={font=\scriptsize}]
+'''+ '\n'.join(callplots)+r'''
+\end{axis}
+\end{tikzpicture}
+\caption{One fixed-order telecom stream with a persistent portfolio per arm. Episode-level metrics are shipped without task text or dialogue. The exact cache is a strong call-count control, and the graph does not measure monetary or total compute cost.\label{fig:telecom}}
+\end{figure}
+''')
+    phases=trace['lifecycle_arms']['qwen_certified_skills_lpba']
+    before=phases['pre_change']; after=phases['post_change']
+    active=[(0,0)]+[(row['episode'],row['active_programs_at_start']) for row in before]+[(40+row['episode'],row['active_programs_at_start']) for row in after]
+    running=0; valid=[(0,0)]
+    for i,row in enumerate(before+after,1):
+        running+=row['valid_deterministic_executions'];valid.append((i,running))
+    assert running==life['phase_summary']['qwen_certified_skills_lpba']['entire_lifecycle']['complete_workload']['valid_deterministic_executions']
+    (out/'figure_lifecycle.tex').write_text(r'''\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=.86\textwidth,height=5.5cm,xlabel={Replay episode (pre-change then post-change)},ylabel={Active certificates at episode start},xmin=0,xmax=80,ymin=0,ymax=4,ytick={0,1,2,3,4},grid=major,axis y line*=left,legend pos=north west]
+\addplot+[black,mark=none,thick,const plot] coordinates {'''+points(active,'.0f')+r'''};
+\addlegendentry{Active certificates}
+\draw[black,dashed] (axis cs:40.5,0) -- (axis cs:40.5,4);
+\node[anchor=north west,font=\scriptsize] at (axis cs:41,3.9) {version event};
+\end{axis}
+\begin{axis}[width=.86\textwidth,height=5.5cm,xmin=0,xmax=80,ymin=0,ymax=105,ylabel={Cumulative valid executions},axis y line*=right,axis x line=none,ytick={0,25,50,75,100},legend pos=south east]
+\addplot+[black,dashed,mark=none,thick] coordinates {'''+points(valid,'.0f')+r'''};
+\addlegendentry{Valid executions}
+\end{axis}
+\end{tikzpicture}
+\caption{Controlled metadata-version replay in the checked LPBA arm. One affected certificate is absent at the first post-change episode and reappears after revalidation; unaffected authority persists. Valid executions accumulate across both phases; stale deterministic executions are reported in the text. The source payload itself was unchanged.\label{fig:lifecycle}}
+\end{figure}
+''')
+    (out/'figure_support_structure.tex').write_text(r'''\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,source/.style={draw,rounded corners,minimum width=7mm,minimum height=5mm},proof/.style={draw,circle,inner sep=1.5pt},goal/.style={draw,rounded corners,fill=black!8,minimum width=8mm},edge/.style={->,>=stealth,thin}]
+\node[anchor=west,font=\bfseries] at (0,2.0) {(a) Alternative supports};
+\node[source] (a) at (.35,1) {$a$}; \node[source] (b) at (.35,0) {$b$}; \node[source] (c) at (.35,-1) {$c$};
+\node[proof] (p) at (2,1) {$P_1$}; \node[proof] (q) at (2,-1) {$P_2$}; \node[goal] (j) at (3.8,0) {$j$};
+\draw[edge] (a)--(p);\draw[edge] (b)--(p);\draw[edge] (a)--(q);\draw[edge] (c)--(q);\draw[edge] (p)--(j);\draw[edge] (q)--(j);
+\node[anchor=west,font=\bfseries] at (5,2.0) {(b) Core and disjoint packets};
+\node[source] (k) at (5.5,.8) {$K_0$};\node[source] (r) at (6.8,1.2) {$P_1$};\node[source] (s) at (6.8,0) {$P_2$};\node[source] (t) at (6.8,-1.2) {$P_3$};
+\node[goal] (u) at (8.6,1.2) {$j_1$};\node[goal] (v) at (8.6,0) {$j_2$};\node[goal] (w) at (8.6,-1.2) {$j_3$};
+\draw[edge] (k)--(r);\draw[edge] (k)--(s);\draw[edge] (k)--(t);\draw[edge] (r)--(u);\draw[edge] (s)--(v);\draw[edge] (t)--(w);
+\end{tikzpicture}
+\caption{Support topology determines acquisition behavior. In (a), the arrow pairs into each proof node mean conjunction, while the two proof nodes are alternatives for authorizing $j$; $a$ is shared. In (b), each region needs the common core and one disjoint packet. The drawing is schematic, not a measured instance.\label{fig:support}}
+\end{figure}
+''')
+    (out/'figure_system.tex').write_text(r'''\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\small,box/.style={draw,rounded corners,align=center,minimum height=8mm,text width=22mm},arrow/.style={->,>=stealth,thick},node distance=4mm]
+\node[box] (source) {Versioned\\reviewed sources};
+\node[box,right=of source] (support) {Complete\\proof support};
+\node[box,right=of support] (check) {Checker and\\certificate};
+\node[box,right=of check] (registry) {Persistent\\authority registry};
+\node[box,right=of registry] (runtime) {Guarded\\tool execution};
+\draw[arrow] (source)--(support);\draw[arrow] (support)--(check);\draw[arrow] (check)--(registry);\draw[arrow] (registry)--(runtime);
+\node[box,below=9mm of registry] (event) {Source version\\event};
+\draw[arrow] (event)--node[right,font=\scriptsize] {suspend affected} (registry);
+\end{tikzpicture}
+\caption{Operational path from reviewed semantics to deterministic action. A certificate records source dependencies; the registry checks versions and request-state guards before execution. A changed dependency suspends affected authority until revalidated.\label{fig:system}}
 \end{figure}
 ''')
     print('generated',len(list(out.glob('*.tex'))),'files in',out)
