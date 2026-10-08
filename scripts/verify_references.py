@@ -13,12 +13,14 @@ def bib_from_crossref(key: str, msg: dict) -> str:
     kind = 'article' if msg['type'] == 'journal-article' else 'inproceedings'
     fields = {'title':'{' + esc(msg['title'][0]) + '}',
               'author':' and '.join(esc(a.get('family','')+', '+a.get('given','')) for a in msg.get('author',[])),
-              'year':str(msg.get('published',msg.get('issued'))['date-parts'][0][0]),
+              # Use the issue's print year when Crossref also records an earlier
+              # online publication. Otherwise year and volume can disagree.
+              'year':str(msg.get('published-print',msg.get('published',msg.get('issued')))['date-parts'][0][0]),
               'doi':msg['DOI'], 'url':'https://doi.org/'+msg['DOI']}
     if kind=='article': fields['journal']=esc(msg.get('container-title',[''])[0])
     else: fields['booktitle']=esc(msg.get('container-title',[''])[0])
-    for k in ('volume','issue','page','publisher'):
-        if msg.get(k): fields[k]=esc(str(msg[k]))
+    for original,bibtex in [('volume','volume'),('issue','number'),('page','pages'),('publisher','publisher')]:
+        if msg.get(original): fields[bibtex]=esc(str(msg[original]))
     return '@'+kind+'{'+key+',\n'+''.join('  '+k+' = {'+v+'},\n' for k,v in fields.items())+'}\n'
 
 

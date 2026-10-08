@@ -146,4 +146,17 @@ class ReleaseChecks(unittest.TestCase):
             subprocess.run([sys.executable,str(ROOT/'scripts/summarize_acquisition_review.py'),'--output',str(target)],check=True,stdout=subprocess.DEVNULL)
             self.assertEqual(target.read_bytes(),(ROOT/'results/acquisition_review/paired_summary.json').read_bytes())
 
+    def test_crossref_bibliography_uses_issue_year_and_standard_fields(self):
+        spec=importlib.util.spec_from_file_location('reference_generator', ROOT/'scripts/verify_references.py')
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        metadata={'type':'journal-article','title':['Published article'],'author':[{'family':'Author','given':'A.'}],
+                  'published':{'date-parts':[[2015]]},'published-print':{'date-parts':[[2017]]},
+                  'DOI':'10.example/record','container-title':['Journal'],'volume':'77','issue':'3','page':'661-685'}
+        entry=module.bib_from_crossref('example',metadata)
+        self.assertIn('year = {2017}',entry)
+        self.assertIn('number = {3}',entry)
+        self.assertIn('pages = {661-685}',entry)
+        self.assertNotIn('  page =',entry)
+        self.assertNotIn('  issue =',entry)
+
 if __name__ == '__main__': unittest.main()
