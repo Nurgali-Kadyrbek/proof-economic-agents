@@ -1,0 +1,25 @@
+\begin{table}[H]
+\caption{Deterministic runtime audit using constructed reviewed contracts. The unchanged case permits the intended write; adverse cases produce no write effects. Selective suspension also preserves the unrelated certificate. These cases check mechanisms, rather than estimating a population failure rate.\label{tab:runtime-review}}
+\centering\small\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{lcc}
+\toprule
+Injected condition & Expected behavior & Write effects \\
+\midrule
+Unchanged reviewed program & Pass & 1 \\
+Changed source meaning; unchanged version & Pass & 0 \\
+Changed source version & Pass & 0 \\
+Changed tool program & Pass & 0 \\
+Changed program arguments & Pass & 0 \\
+Request principal mismatch & Pass & 0 \\
+Missing write precondition & Pass & 0 \\
+Failed read postcondition & Pass & 0 \\
+State change before commit & Pass & 0 \\
+Policy-only change before commit & Pass & 0 \\
+Tool effect classification mismatch & Pass & 0 \\
+Closure dependency event & Pass & 0 \\
+Disjoint certificate under selective suspension & Pass & 0 \\
+Unvalidated model proposal & Pass & 0 \\
+Source update at initial version snapshot & Pass & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,108 @@
+{
+  "adverse_case_count": 14,
+  "case_count": 15,
+  "cases": [
+    {
+      "case": "nominal",
+      "detail": "skill completed",
+      "passed": true,
+      "write_effects": 1
+    },
+    {
+      "case": "semantic_edit",
+      "detail": "no matching active skill",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "version_edit",
+      "detail": "no matching active skill",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "tool_tamper",
+      "detail": "proof is not bound to the exact step program",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "argument_tamper",
+      "detail": "proof is not bound to the exact step program",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "principal_mismatch",
+      "detail": "no matching active skill",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "missing_guard",
+      "detail": "step precondition failed",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "missing_post",
+      "detail": "step postcondition failed; stopped",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "state_race",
+      "detail": "state changed before commit",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "policy_race",
+      "detail": "policy changed before commit",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "effect_type",
+      "detail": "tool effect type disagrees with reviewed step",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "closure_invalidation",
+      "detail": "no matching active skill",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "selective_invalidation",
+      "detail": "affected suspended; disjoint skill remains active",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "untrusted_proposal",
+      "detail": "evidence review:write is not marked accepted",
+      "passed": true,
+      "write_effects": 0
+    },
+    {
+      "case": "initial_snapshot_race",
+      "detail": "no matching active skill",
+      "passed": true,
+      "write_effects": 0
+    }
+  ],
+  "passed_count": 15,
+  "runner_sha256": "6375ed0cf5c68238784c54916c71a941312e97225cd227caaf1e8dd0d01aaddf",
+  "runtime_source_sha256": {
+    "certify.py": "d659efef15c02e65ec38b5b45606a4666c4ee0a96dbe2527f7e474634a51b2f2",
+    "evidence.py": "73dafc215e94096c82b373b733d6e262f562c1f02f0adf63446be85b70d635d8",
+    "lifecycle.py": "a1e50a9178aaaeb1887b06118f0a6d4b198c880cf9092341fdfea184c0abe173",
+    "runtime.py": "54a1c5f11978cf360bb17a90bbcae42fd57e6c913e7cea4d3f28aa3af6ffe8dd",
+    "skill.py": "3fde9b7bb0ac159d1f3e958987c6c98f263f8eac31972ed27767c2008a59d00f"
+  },
+  "schema_version": "runtime-fault-review-v1",
+  "scope": "constructed contracts; deterministic implementation cases, not independent deployment trials",
+  "unsafe_write_effects": 0
+}

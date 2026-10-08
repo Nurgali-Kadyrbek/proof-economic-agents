@@ -1,6 +1,6 @@
 # Proof-Economic Delegation: public reproducibility artifacts
 
-This release accompanies the manuscript **Proof-Economic Delegation: Near-Optimal Acquisition of Reusable Formal Authority for Recurrent AI Agent Workloads** (target: *Big Data and Cognitive Computing*). It reproduces the paper's reported tables, diagrams, graphs, and in-text quantities from frozen results. The near-optimality claim concerns the stated formal-source acquisition objective on two ProofWriter cohorts. It is not a claim of general agent-quality improvement or verified translation of natural-language policy into proof rules.
+This release accompanies the manuscript **Proof-Economic Delegation: Near-Optimal Acquisition of Reusable Formal Authority for Recurrent AI Agent Workloads** (target: *Big Data and Cognitive Computing*). It reproduces the paper's tables, diagrams, graphs, and in-text quantities from frozen results. The release includes exact acquisition oracles, a second weighted-completion solver, exhaustive density-greedy and commitment controls, checked tool execution, and reproducible runtime fault cases. The empirical near-optimality result concerns the formal-source acquisition objective on the evaluated ProofWriter cohorts.
 
 ## Recreate manuscript inputs
 
@@ -12,7 +12,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 python scripts/audit_release.py
 ```
 
-`generated/` is the checked-in expected output. The unit test regenerates every LaTeX input and compares its bytes. No model weights, raw customer transcripts, or GPU is needed for this step. `results/tau2_telecom_stream_heldout/public_summary.json` contains aggregate results; `public_trace.json` contains only dialogue-free episode metrics. Both identify the local raw result files by SHA-256. The trace reproduces the cumulative-call and lifecycle plots but does not permit replay of individual model conversations or independent semantic audit of them. The public claim about telecom is limited accordingly.
+`generated/` is the checked-in expected output. The unit test regenerates every LaTeX input and compares its bytes. No model weights, raw customer transcripts, or GPU is needed for this step. `results/tau2_telecom_stream_heldout/public_summary.json` contains aggregate results; `public_trace.json` contains only dialogue-free episode metrics. Both identify the local raw result files by SHA-256. The trace reproduces the cumulative-call and lifecycle plots but does not permit replay of individual model conversations or independent semantic audit of them. The original model-call counts can be audited from the shipped episode metrics; conversation-level semantic review requires the original inputs and traces.
 
 ## Re-run the exact ProofWriter analysis
 
@@ -26,11 +26,28 @@ Use a separate copy for each optional CPU-intensive rerun, retaining the publish
 
 The banking artifact is one development catalog. Its packet costs and values are shipped in `results/banking_exact_separable/results.json`; the public test independently recomputes the optimal ratio order and fixed-budget knapsack frontier from those arrays. The document-to-rule mapping was not prospectively validated. The original pinned $\tau^2$ checkout is identified in [INPUTS.md](INPUTS.md).
 
+## Reproduce the scheduling and runtime review
+
+The secondary acquisition audit reconstructs every source catalog in both frozen cohorts, under uniform and training-frequency workloads. It independently solves weighted first-certification cost and compares LPBA with an exhaustive density-greedy control and a matched bundle-commitment variant. It reproduces 400 theory/workload optima. This is a second analysis of the existing cohorts, rather than a new independent dataset.
+
+In a separate copy with the pinned ProofWriter data downloaded, move only `results/acquisition_review/results.json` aside and run:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python scripts/run_acquisition_review.py --workers 8
+python scripts/summarize_acquisition_review.py --output /tmp/paired-summary.json
+```
+
+`--data-root` accepts a separate benchmark checkout. NumPy and PyYAML are required for source reconstruction; optional `numba` accelerates the independent backward dynamic program. It runs correctly without that accelerator, with a longer runtime. Bootstrap summaries use NumPy's random generator and the seed recorded in `configs/acquisition_review.json`.
+
+The standalone tests execute all 15 constructed runtime cases without a language model or benchmark download. To write a new copy of the case artifact, move `results/runtime_review/results.json` aside in a separate release copy and run `python scripts/run_runtime_review.py`. The cases cover changed formal source meaning, versions, program or argument modification, principal and state guards, failed postconditions, policy and state races, and selective invalidation. They check implementation mechanisms; they do not estimate a production failure probability.
+
+The review reproduced and fixed an initial-snapshot race in the earlier public runtime. An update between checking a proof and capturing its dependency epoch could allow a write. The current kernel captures epochs before checking. `results/runtime_review/regression.json` records the before/after outcome and the historical release commit. Historical telecom metrics predate the repair and remain frozen.
+
 ## Layout
 
 - `src/`: model-independent authority, proof, acquisition, and exact ProofWriter analysis code used by the reported studies.
 - `configs/`, `docs/`: frozen study designs and methods.
-- `results/`: source-order, stress, skew, banking, and aggregate and episode-metric telecom artifacts. The large train-prior artifact is retained because its exact bytes are checked by the frozen runs.
+- `results/`: source-order, stress, skew, banking, secondary acquisition review, runtime faults, and aggregate and episode-metric telecom artifacts. The large train-prior artifact is retained because its exact bytes are checked by the frozen runs.
 - `generated/`: publication LaTeX quantities, complete tables, and native TikZ/pgfplots figures.
 - `scripts/`: generation, verified DOI bibliography construction, checksum and release audit.
 - `tests/`: artifact and exact-objective consistency checks.

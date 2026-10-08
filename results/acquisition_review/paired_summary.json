@@ -1,0 +1,440 @@
+{
+  "generator_sha256": "882bf944c064a37da3e5a39b69f7e68a87c31b97dcf68dd76d2ae211f1f02698",
+  "interpretation": "secondary descriptive matched-theory comparisons; same cohorts and outcomes, no independent replication or multiplicity-adjusted confirmatory test",
+  "schema_version": "acquisition-review-paired-summary-v1",
+  "source_sha256": "4211df8117cfb5c6349b2bd659964aa6308728b9aaafa2b66bc8f8e65cff1da1",
+  "summaries": {
+    "proofwriter_exact_characterization": {
+      "train_predicate_frequency": {
+        "committed_bundle": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.0024903652530275954,
+              0.010688617317233513
+            ],
+            "mean": 0.006236982081722118
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.009691723087091859,
+              0.04207456546536002
+            ],
+            "mean": 0.024409337316383218
+          },
+          "lpba_wins_ties_losses": [
+            12,
+            88,
+            0
+          ]
+        },
+        "exact_density": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.005014793506944477,
+              0.017777684681374625
+            ],
+            "mean": 0.010897930144152475
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.02232235402790071,
+              0.08302962254711016
+            ],
+            "mean": 0.05078422592936963
+          },
+          "lpba_wins_ties_losses": [
+            16,
+            81,
+            3
+          ]
+        },
+        "lazy_first_use": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.05112163446238873,
+              0.09337509091867371
+            ],
+            "mean": 0.07163835884564759
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.2110796405849629,
+              0.4137494179475304
+            ],
+            "mean": 0.30785805588925064
+          },
+          "lpba_wins_ties_losses": [
+            46,
+            53,
+            1
+          ]
+        },
+        "one_step_certification_voi": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.10110429510032719,
+              0.17297740586120863
+            ],
+            "mean": 0.13653805828258775
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.5778867189339401,
+              1.1089740919681008
+            ],
+            "mean": 0.8332374649471506
+          },
+          "lpba_wins_ties_losses": [
+            45,
+            54,
+            1
+          ]
+        },
+        "workload_weighted_drd_hec": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.012609825409762566,
+              0.036707616737962696
+            ],
+            "mean": 0.02410863795813281
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.06195316885721354,
+              0.19148905615261239
+            ],
+            "mean": 0.12304134081418475
+          },
+          "lpba_wins_ties_losses": [
+            29,
+            63,
+            8
+          ]
+        }
+      },
+      "uniform": {
+        "committed_bundle": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.0030340992392891702,
+              0.009356977725108502
+            ],
+            "mean": 0.006043103495948074
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.013001425982119839,
+              0.03922610976404251
+            ],
+            "mean": 0.025492154562083345
+          },
+          "lpba_wins_ties_losses": [
+            17,
+            83,
+            0
+          ]
+        },
+        "exact_density": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.00473029241631497,
+              0.015605594912168287
+            ],
+            "mean": 0.009757132778529395
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.021398541549030408,
+              0.07288318140005992
+            ],
+            "mean": 0.04545807453117913
+          },
+          "lpba_wins_ties_losses": [
+            19,
+            78,
+            3
+          ]
+        },
+        "lazy_first_use": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.03702688702384478,
+              0.06532076491223049
+            ],
+            "mean": 0.0506934063426752
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.16519512809948517,
+              0.2904573705656826
+            ],
+            "mean": 0.22579908694164275
+          },
+          "lpba_wins_ties_losses": [
+            43,
+            56,
+            1
+          ]
+        },
+        "one_step_certification_voi": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.09000647541453591,
+              0.1553545487762868
+            ],
+            "mean": 0.12202989670452911
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.5292550251281929,
+              0.9552141531487628
+            ],
+            "mean": 0.7364477628884817
+          },
+          "lpba_wins_ties_losses": [
+            44,
+            54,
+            2
+          ]
+        },
+        "workload_weighted_drd_hec": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.00928530599020084,
+              0.03014952263793878
+            ],
+            "mean": 0.01929057704140304
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.04680988924247748,
+              0.16406108793355584
+            ],
+            "mean": 0.1017926072379383
+          },
+          "lpba_wins_ties_losses": [
+            26,
+            64,
+            10
+          ]
+        }
+      }
+    },
+    "proofwriter_structural_stress": {
+      "train_predicate_frequency": {
+        "committed_bundle": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.014113687489156784,
+              0.02990868762214948
+            ],
+            "mean": 0.021581804680303886
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.052216506325648414,
+              0.1133132962673089
+            ],
+            "mean": 0.08147168745925228
+          },
+          "lpba_wins_ties_losses": [
+            44,
+            51,
+            5
+          ]
+        },
+        "exact_density": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.026172029951021598,
+              0.04794653272678064
+            ],
+            "mean": 0.036878810255265806
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.11278872230795087,
+              0.22048934916230464
+            ],
+            "mean": 0.16476411506479252
+          },
+          "lpba_wins_ties_losses": [
+            60,
+            27,
+            13
+          ]
+        },
+        "lazy_first_use": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.09762361576285315,
+              0.14042774127730814
+            ],
+            "mean": 0.11826701575502092
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.44141965690910606,
+              0.6292836708143201
+            ],
+            "mean": 0.5334281337187854
+          },
+          "lpba_wins_ties_losses": [
+            91,
+            0,
+            9
+          ]
+        },
+        "one_step_certification_voi": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.22002530976240298,
+              0.28348617556266653
+            ],
+            "mean": 0.25182502911077936
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              1.2881820128113017,
+              1.7163214850581174
+            ],
+            "mean": 1.50127789982481
+          },
+          "lpba_wins_ties_losses": [
+            91,
+            0,
+            9
+          ]
+        },
+        "workload_weighted_drd_hec": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.07506477182337838,
+              0.10953625123208423
+            ],
+            "mean": 0.09153755464196772
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.36334593929816156,
+              0.5698362791514102
+            ],
+            "mean": 0.4592559823263505
+          },
+          "lpba_wins_ties_losses": [
+            89,
+            0,
+            11
+          ]
+        }
+      },
+      "uniform": {
+        "committed_bundle": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.013675371111760573,
+              0.02845177149552333
+            ],
+            "mean": 0.020665311338249604
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.05391258190501985,
+              0.11405691586707352
+            ],
+            "mean": 0.08268441988900353
+          },
+          "lpba_wins_ties_losses": [
+            46,
+            49,
+            5
+          ]
+        },
+        "exact_density": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.025024604498980228,
+              0.04598117772577666
+            ],
+            "mean": 0.035373865804476524
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.11106108125864604,
+              0.21355811002021158
+            ],
+            "mean": 0.16097579610198437
+          },
+          "lpba_wins_ties_losses": [
+            61,
+            26,
+            13
+          ]
+        },
+        "lazy_first_use": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.08230335103839563,
+              0.11046820696623658
+            ],
+            "mean": 0.09625416647970832
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.3761000060833737,
+              0.5169704794245286
+            ],
+            "mean": 0.4449768280472038
+          },
+          "lpba_wins_ties_losses": [
+            91,
+            0,
+            9
+          ]
+        },
+        "one_step_certification_voi": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.20360604815773597,
+              0.2611882680151258
+            ],
+            "mean": 0.23241284395183953
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              1.188084364869266,
+              1.553904849152253
+            ],
+            "mean": 1.3702135248936989
+          },
+          "lpba_wins_ties_losses": [
+            90,
+            0,
+            10
+          ]
+        },
+        "workload_weighted_drd_hec": {
+          "lpba_completion_reduction": {
+            "ci95": [
+              0.07473982103136212,
+              0.10843283147044706
+            ],
+            "mean": 0.09129284960958431
+          },
+          "lpba_minus_control_area": {
+            "ci95": [
+              0.35684311618759196,
+              0.5538655479058477
+            ],
+            "mean": 0.4511297931734389
+          },
+          "lpba_wins_ties_losses": [
+            87,
+            1,
+            12
+          ]
+        }
+      }
+    }
+  }
+}

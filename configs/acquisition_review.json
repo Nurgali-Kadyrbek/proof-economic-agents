@@ -1,0 +1,18 @@
+{
+  "study": "post-publication-package audit of scheduling baselines and certification delay",
+  "scope": "secondary analysis on the unchanged two frozen cohorts; not independent confirmation",
+  "cohorts": ["proofwriter_exact_characterization", "proofwriter_structural_stress"],
+  "workloads": ["uniform", "train_predicate_frequency"],
+  "policies": ["lpba", "lazy_first_use", "one_step_certification_voi", "workload_weighted_drd_hec", "committed_bundle", "exact_density"],
+  "max_local_union": 3,
+  "max_bundle_candidates": 32,
+  "exact_density_max_relevant": 20,
+  "independent_dp_max_relevant": 12,
+  "metrics": ["whole_order_area", "weighted_first_certification_cost", "excess_completion_cost_over_exact", "paired_completion_cost_reduction_vs_lazy"],
+  "bootstrap": {"repetitions": 10000, "seed": 20261008, "unit": "theory"},
+  "selection": "all published theories; no new cohort selection or exclusions",
+  "tuning": "none; candidate construction copied from the frozen LPBA and one prespecified commitment variant",
+  "density_reference": "10.1287/ijoc.2021.1124",
+  "density_control": "maximize exact incremental certified weight per incremental cost across all remaining subsets, commit to selected block, source order by frozen participation/cost then identifier; earn each item at source completion",
+  "output": "results/acquisition_review/results.json"
+}

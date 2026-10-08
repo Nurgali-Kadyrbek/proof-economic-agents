@@ -1,0 +1,18 @@
+{
+  "after": {
+    "case": "initial_snapshot_race",
+    "detail": "no matching active skill",
+    "passed": true,
+    "write_effects": 0
+  },
+  "before": {
+    "case": "initial_snapshot_race",
+    "detail": "skill completed",
+    "passed": false,
+    "write_effects": 1
+  },
+  "historical_release_commit": "9c684f0934cb95d4152b132ccbc5d6d019f05c66",
+  "historical_skill_sha256": "030cc1d7515d4773f6a777318a8404e9f6d5d3ab68e15166c57b58b299c585d3",
+  "repair": "capture initial dependency snapshot before checking the proof, so a changed epoch cannot be inherited by a previously checked proof",
+  "schema_version": "initial-snapshot-regression-v1"
+}

@@ -152,11 +152,14 @@ class SkillRuntime:
                 continue
             if context.fields.get("principal") != context.principal:
                 continue
+            # Capture epochs before proof checking. Otherwise an update between
+            # checking and this snapshot could make an old proof inherit a new
+            # epoch and pass every subsequent commit guard.
+            first = self.backend.snapshot()
             valid, reason = self.checker.check(skill, self.evidence)
             if not valid:
                 self.registry.suspend(skill.skill_id, reason)
                 continue
-            first = self.backend.snapshot()
             if not all(atom in first.facts for atom in skill.preconditions_for(context.fields)):
                 continue
             epochs = {dependency: first.policy_epochs.get(dependency, "") for dependency in skill.scope_dependencies}

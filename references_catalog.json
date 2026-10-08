@@ -52,5 +52,35 @@
     "doi": "10.3390/make8090269",
     "title_contains": "STRATA-HeadQuotient",
     "why": "Authors’ published work on typed predicate-graph computation; cited only for representational context"
+  },
+  {
+    "key": "msop",
+    "doi": "10.1287/ijoc.2021.1124",
+    "title_contains": "Min Sum Ordering",
+    "why": "Closest published general framework; exact-density greedy comparator and weighted-completion objective"
+  },
+  {
+    "key": "smith",
+    "doi": "10.1002/nav.3800030106",
+    "title_contains": "single",
+    "why": "Classical weighted-completion ratio ordering; avoids presenting the ratio rule as a new theorem"
+  },
+  {
+    "key": "pcc",
+    "doi": "10.1145/263699.263712",
+    "title_contains": "Proof-Carrying Code",
+    "why": "Published proof-to-program checking antecedent"
+  },
+  {
+    "key": "shield",
+    "doi": "10.1609/aaai.v32i1.11797",
+    "title_contains": "Shielding",
+    "why": "Published runtime enforcement antecedent; distinguishes acquisition and reuse from shielding"
+  },
+  {
+    "key": "dnf",
+    "doi": "10.1007/s00453-015-0092-9",
+    "title_contains": "DNF",
+    "why": "Published alternative/conjunctive Boolean certificate antecedent; hidden-outcome evaluation differs from review acquisition"
   }
 ]

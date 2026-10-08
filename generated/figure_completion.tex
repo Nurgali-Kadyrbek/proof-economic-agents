@@ -1,0 +1,12 @@
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[ybar,bar width=8pt,width=.86\textwidth,height=6cm,ylabel={Excess weighted completion cost (\%)},ymin=0,xtick={1,2,3,4,5,6},xticklabels={First-Use,One-step,Support score,Committed,Density,LPBA},x tick label style={rotate=20,anchor=east,font=\scriptsize},legend pos=north east,legend style={font=\scriptsize},grid=major]
+\addplot+[black,fill=black!15,error bars/.cd,y dir=both,y explicit] coordinates {(1,7.7040) += (0,1.9465) -= (0,1.8509) (2,21.3343) += (0,6.2153) -= (0,5.8345) (3,4.0226) += (0,1.8670) -= (0,1.6248) (4,2.2461) += (0,0.9608) -= (0,0.8456) (5,2.6925) += (0,1.0860) -= (0,0.9802) (6,1.5795) += (0,0.7616) -= (0,0.6564)};
+\addlegendentry{Source order}
+\addplot+[black,fill=white,postaction={pattern=north east lines},error bars/.cd,y dir=both,y explicit] coordinates {(1,16.8811) += (0,1.5396) -= (0,1.4853) (2,41.6283) += (0,4.9629) -= (0,4.9224) (3,16.8902) += (0,2.7830) -= (0,2.5503) (4,7.5633) += (0,1.3143) -= (0,1.2244) (5,9.3634) += (0,1.5267) -= (0,1.4753) (6,5.1812) += (0,1.0090) -= (0,0.9107)};
+\addlegendentry{Structural stress}
+\end{axis}
+\end{tikzpicture}
+\caption{Scheduling quality measured by weighted first-certification cost. Bars and theory-bootstrap intervals use the same frozen uniform cohorts. This measure is unchanged by adding unused source items after all certifiable work is acquired; it addresses possible dilution of relative area regret by a full-value tail.\label{fig:completion}}
+\end{figure}

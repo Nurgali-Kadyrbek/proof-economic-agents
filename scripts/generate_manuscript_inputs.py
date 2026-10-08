@@ -57,6 +57,9 @@ def main() -> None:
     budget = read(root, 'banking_exact_separable/budget_conditioned.json')
     agent = read(root, 'tau2_telecom_stream_heldout/public_summary.json')
     trace = read(root, 'tau2_telecom_stream_heldout/public_trace.json')
+    review = read(root, 'acquisition_review/results.json')
+    paired = read(root, 'acquisition_review/paired_summary.json')
+    runtime_review = read(root, 'runtime_review/results.json')
     assert fresh['schema_version'] == 'proofwriter-exact-characterization-v1'
     assert stress['schema_version'] == 'proofwriter-structural-stress-v1'
     assert bank['schema_version'] == 'banking-separable-exact-development-audit-v1'
@@ -132,7 +135,22 @@ def main() -> None:
         'BankTenthExact': str(int(budget['budget_frontiers']['0.1']['exact_value'])),
         'BankTenthLpba': str(int(budget['budget_frontiers']['0.1']['budget_conditioned_lpba_value'])),
         'BankEarlyBudget': str(int(budget['budget_frontiers']['0.1']['budget'])),
+        'IndependentOracleMatches': str(review['independent_oracle_matches']),
+        'RuntimeCases': str(runtime_review['case_count']),
+        'RuntimeAdverseCases': str(runtime_review['adverse_case_count']),
+        'RuntimeUnsafeWrites': str(runtime_review['unsafe_write_effects']),
     }
+    for prefix, cohort in [('Fresh','proofwriter_exact_characterization'), ('Stress','proofwriter_structural_stress')]:
+        for suffix, mode in [('', 'uniform'), ('Prior', 'train_predicate_frequency')]:
+            sr = review['summaries'][cohort][mode]['lpba']
+            vals[prefix+suffix+'LatencyExcess'] = pct(sr['relative_completion_excess']['mean'])
+            vals[prefix+suffix+'DelayReduction'] = pct(sr['completion_reduction_vs_lazy']['mean'])
+            vals[prefix+suffix+'AreaRegret'] = pct(sr['relative_area_regret']['mean'])
+            comparison = paired['summaries'][cohort][mode]['exact_density']['lpba_completion_reduction']
+            vals[prefix+suffix+'DensityReduction'] = pct(comparison['mean'])
+            vals[prefix+suffix+'DensityReductionLow'] = pct(comparison['ci95'][0])
+            vals[prefix+suffix+'DensityReductionHigh'] = pct(comparison['ci95'][1])
+        vals[prefix+'AreaRetention'] = pct(1-review['summaries'][cohort]['uniform']['lpba']['relative_area_regret']['mean'])
     for k,v in vals.items(): m.append(macro(k,v))
     (out/'numbers.tex').write_text(''.join(m))
     method_names = {'exact':'Exact oracle','lpba':'LPBA','lazy_first_use':'Lazy First-Use',
@@ -351,6 +369,52 @@ def main() -> None:
 \caption{Operational path from reviewed semantics to deterministic action. A certificate records source dependencies; the registry checks versions and request-state guards before execution. A changed dependency suspends affected authority until revalidated.\label{fig:system}}
 \end{figure}
 ''')
+    completion_rows = []
+    review_names = {'lpba':'LPBA', 'lazy_first_use':'Lazy First-Use',
+                    'one_step_certification_voi':'One-step gain', 'workload_weighted_drd_hec':'Support score',
+                    'committed_bundle':'Committed bundle', 'exact_density':'Exact-density greedy'}
+    for key, label in review_names.items():
+        values = []
+        for cohort in ['proofwriter_exact_characterization','proofwriter_structural_stress']:
+            entry = review['summaries'][cohort]['uniform'][key]['relative_completion_excess']
+            values.append(f"{100*entry['mean']:.2f} [{100*entry['ci95'][0]:.2f}, {100*entry['ci95'][1]:.2f}]")
+        completion_rows.append([label, *values])
+    (out/'table_completion.tex').write_text(table('tab:completion',
+        'Mean per-theory excess weighted first-certification cost over the independently recomputed exact optimum (percent; descriptive theory-bootstrap intervals). Unprovable work is excluded consistently. The source-order and stress columns use the original frozen uniform workloads.',
+        ['Policy','Source order','Structural stress'],completion_rows,'lrr'))
+    plots=[]
+    keys = ['lazy_first_use','one_step_certification_voi','workload_weighted_drd_hec','committed_bundle','exact_density','lpba']
+    for style,label,cohort in [('black,fill=black!15','Source order','proofwriter_exact_characterization'),
+                              ('black,fill=white,postaction={pattern=north east lines}','Structural stress','proofwriter_structural_stress')]:
+        coords=[]
+        for i,key in enumerate(keys,1):
+            s = review['summaries'][cohort]['uniform'][key]['relative_completion_excess']
+            coords.append(f"({i},{100*s['mean']:.4f}) += (0,{100*(s['ci95'][1]-s['mean']):.4f}) -= (0,{100*(s['mean']-s['ci95'][0]):.4f})")
+        plots.extend([r'\addplot+['+style+r',error bars/.cd,y dir=both,y explicit] coordinates {'+' '.join(coords)+r'};',
+                      r'\addlegendentry{'+label+'}'])
+    (out/'figure_completion.tex').write_text(r'''\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[ybar,bar width=8pt,width=.86\textwidth,height=6cm,ylabel={Excess weighted completion cost (\%)},ymin=0,xtick={1,2,3,4,5,6},xticklabels={First-Use,One-step,Support score,Committed,Density,LPBA},x tick label style={rotate=20,anchor=east,font=\scriptsize},legend pos=north east,legend style={font=\scriptsize},grid=major]
+'''+ '\n'.join(plots)+r'''
+\end{axis}
+\end{tikzpicture}
+\caption{Scheduling quality measured by weighted first-certification cost. Bars and theory-bootstrap intervals use the same frozen uniform cohorts. This measure is unchanged by adding unused source items after all certifiable work is acquired; it addresses possible dilution of relative area regret by a full-value tail.\label{fig:completion}}
+\end{figure}
+''')
+    runtime_labels = {
+        'nominal':'Unchanged reviewed program', 'semantic_edit':'Changed source meaning; unchanged version',
+        'version_edit':'Changed source version', 'tool_tamper':'Changed tool program',
+        'argument_tamper':'Changed program arguments', 'principal_mismatch':'Request principal mismatch',
+        'missing_guard':'Missing write precondition', 'missing_post':'Failed read postcondition',
+        'state_race':'State change before commit', 'policy_race':'Policy-only change before commit',
+        'effect_type':'Tool effect classification mismatch', 'closure_invalidation':'Closure dependency event',
+        'selective_invalidation':'Disjoint certificate under selective suspension', 'untrusted_proposal':'Unvalidated model proposal',
+        'initial_snapshot_race':'Source update at initial version snapshot'}
+    runtime_rows = [[runtime_labels[c['case']], 'Pass' if c['passed'] else 'Fail', str(c['write_effects'])] for c in runtime_review['cases']]
+    (out/'table_runtime_review.tex').write_text(table('tab:runtime-review',
+        'Deterministic runtime audit using constructed reviewed contracts. The unchanged case permits the intended write; adverse cases produce no write effects. Selective suspension also preserves the unrelated certificate. These cases check mechanisms, rather than estimating a population failure rate.',
+        ['Injected condition','Expected behavior','Write effects'],runtime_rows,'lcc'))
     print('generated',len(list(out.glob('*.tex'))),'files in',out)
 
 if __name__ == '__main__': main()
